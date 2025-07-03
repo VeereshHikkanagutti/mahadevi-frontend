@@ -13,7 +13,7 @@ function Navbar() {
         <div className="flex items-center space-x-2">
           {/* 🏠 Logo links to Home */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Logo" className="h-12 w-100 transition-transform duration-300 hover:scale-110" />
+            <img src={logo} alt="Logo" className="h-12 w-auto transition-transform duration-300 hover:scale-110" />
             <span className="text-xl font-bold text-blue-800">MAHADEVI ENTERPRISE</span>
           </Link>
         </div>
@@ -32,14 +32,7 @@ function Navbar() {
       <nav className="bg-gradient-to-r from-[#F08000] via-[#ffb347] to-[#F08000] text-white px-6 py-2 flex justify-between items-center">
         <ul className="hidden md:flex w-full justify-between font-semibold">
           <li className="flex-1 text-center">
-            <NavLink
-              to="/aboutUs"
-              className={({ isActive }) =>
-                "hover:underline" + (isActive ? " border-b-2 border-white" : "")
-              }
-            >
-              About us
-            </NavLink>
+            <Link to="/aboutUs" className="hover:underline">About Us</Link>
           </li>
           <li className="flex-1 text-center">
             <Link to="/products" className="hover:underline">Products & Solutions</Link>

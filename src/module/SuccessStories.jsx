@@ -64,6 +64,44 @@ function SuccessStories() {
 					</div>
 				))}
 			</div>
+
+			{/* Growth Timeline */}
+			<div className="bg-white rounded-xl shadow p-8 my-12">
+				<h2 className="text-2xl font-semibold text-blue-900 mb-6 text-center">
+					Our Growth Journey
+				</h2>
+				<div className="flex flex-col md:flex-row items-center justify-between gap-6">
+					<div className="flex flex-col items-center">
+						<div className="bg-[#F08000] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+							2019
+						</div>
+						<span className="text-gray-700 font-medium">Founded</span>
+						<span className="text-xs text-gray-400">
+							Started with a vision to modernize industrial supply
+						</span>
+					</div>
+					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-[#F08000] to-blue-200 md:h-1 md:w-24 mx-4"></div>
+					<div className="flex flex-col items-center">
+						<div className="bg-blue-200 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+							2021
+						</div>
+						<span className="text-gray-700 font-medium">Digital Expansion</span>
+						<span className="text-xs text-gray-400">
+							Adopted ERP, real-time tracking, and digital tools
+						</span>
+					</div>
+					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-blue-200 to-green-400 md:h-1 md:w-24 mx-4"></div>
+					<div className="flex flex-col items-center">
+						<div className="bg-green-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+							2024
+						</div>
+						<span className="text-gray-700 font-medium">Trusted Partner</span>
+						<span className="text-xs text-gray-400">
+							Serving 100+ clients with excellence
+						</span>
+					</div>
+				</div>
+			</div>
 			<div className="mt-12 text-center">
 				<h3 className="text-lg font-semibold mb-2">
 					Want to be our next success story?
