@@ -40,9 +40,9 @@ function Navbar() {
           <li className="flex-1 text-center">
             <Link to="/request-quote" className="hover:underline">Quote Form</Link>
           </li>
-          <li className="flex-1 text-center">
+          {/* <li className="flex-1 text-center">
             <Link to="/our-brands" className="hover:underline">Our Brands</Link>
-          </li>
+          </li> */}
           <li className="flex-1 text-center">
             <Link to="/success-stories" className="hover:underline">Success Stories</Link>
           </li>

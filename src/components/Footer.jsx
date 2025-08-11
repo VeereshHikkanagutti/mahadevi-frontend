@@ -15,7 +15,7 @@ function Footer() {
         <div>
           <h4 className="font-semibold text-lg mb-2 text-[#F08000]">Quick Links</h4>
           <ul className="space-y-1 text-sm">
-            <li><Link to="/about-us" className="hover:text-[#F08000]">About Us</Link></li>
+            <li><Link to="/aboutUs" className="hover:text-[#F08000]">About Us</Link></li>
             <li><Link to="/products" className="hover:text-[#F08000]">Products & Solutions</Link></li>
             <li><Link to="/request-quote" className="hover:text-[#F08000]">Quote Form</Link></li>
             <li><Link to="/our-brands" className="hover:text-[#F08000]">Our Brands</Link></li>

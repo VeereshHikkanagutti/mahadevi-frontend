@@ -1,5 +1,6 @@
 import React from 'react';
-import img1 from '../assets/buildfeature.jpg';
+import img1 from '../assets/1.jpg';
+import img2 from '../assets/buildfeature.jpg';
 import { productsData } from './Products';
 import { Link } from 'react-router-dom';
 import delivery from '../assets/delivery.svg';
