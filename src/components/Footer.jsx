@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-[#22223b] text-gray-200 pt-10 pb-4 px-4 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+  <footer className="bg-[#1F3A5F] text-[#E6EEF8] pt-10 pb-4 px-4 mt-12">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-blue-900 pb-8">
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold text-[#F08000] mb-2">Mahadevi Enterprise</h3>
-          <p className="text-gray-400 text-sm mb-3">
+          <h3 className="text-2xl font-bold text-white mb-2">Mahadevi Enterprise</h3>
+          <p className="text-blue-100 text-sm mb-3">
             Your trusted partner for industrial materials, bearings, valves, and more. Delivering quality and reliability to the sugar and manufacturing sectors.
           </p>
         </div>
@@ -26,16 +26,16 @@ function Footer() {
         {/* Contact Info */}
         <div>
           <h4 className="font-semibold text-lg mb-2 text-[#F08000]">Contact</h4>
-          <p className="text-sm">📍 Regisrtered Location : </p>
-           <p className="text-sm">    Vinayak Nagar Sindagi Road Almel, 586202 </p>
-          <p className="text-sm" > <a href="tel:+91 97394 61453">📞 +91 97394 61453</a>.</p>
-          <p className="text-sm"><a href="mailto:info.mahadevienterprises@gmail.com"> ✉️ info.mahadevienterprises@gmail.com </a>.</p>
+          <p className="text-sm text-blue-100"> Regisrtered Location : </p>
+           <p className="text-sm text-blue-100">    Vinayak Nagar Sindagi Road Almel, 586202 </p>
+          <p className="text-sm text-blue-100" > <a href="tel:+91 97394 61453" className="hover:text-[#F08000]"> +91 97394 61453</a>.</p>
+          <p className="text-sm text-blue-100"><a href="mailto:info.mahadevienterprises@gmail.com" className="hover:text-[#F08000]">  info.mahadevienterprises@gmail.com </a>.</p>
         </div>
         {/* Social Links */}
         <div>
           <h4 className="font-semibold text-lg mb-2 text-[#F08000]">Follow Us</h4>
           <div className="flex space-x-4 mt-2">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F08000]">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F08000] text-blue-100">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.62 2.01 3.62 4.62v4.71z"/></svg>
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F08000]">
@@ -47,7 +47,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center text-xs text-gray-400 mt-6">
+      <div className="text-center text-xs text-blue-200 mt-6">
         &copy; {new Date().getFullYear()} Mahadevi Enterprise. All rights reserved.
       </div>
     </footer>

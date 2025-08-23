@@ -9,42 +9,42 @@ function Navbar() {
   return (
     <header className="w-full sticky top-0 z-50 backdrop-blur-md shadow-md">
       {/* White Top Bar */}
-      <div className="bg-gray-50 flex justify-between items-center px-6 py-3 shadow-sm">
+      <div className="bg-white flex justify-between items-center px-6 py-3 shadow-sm">
         <div className="flex items-center space-x-2">
           {/* 🏠 Logo links to Home */}
           <Link to="/" className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="h-12 w-auto transition-transform duration-300 hover:scale-110" />
-            <span className="text-xl font-bold text-blue-800">MAHADEVI ENTERPRISE</span>
+            <span className="text-xl font-bold text-[#1F3A5F]">MAHADEVI ENTERPRISE</span>
           </Link>
         </div>
 
         <div className="flex items-center space-x-4">
           {/* 📞 Contact Us button */}
           <Link to="/contact">
-            <button className="bg-[#F08000] hover:bg-[#c96a00] text-white px-4 py-1 rounded-full font-semibold transition">
+            <button className="bg-[#1F3A5F] hover:bg-[#16305a] text-white px-4 py-1 rounded-full font-semibold transition">
               Contact us
             </button>
           </Link>
         </div>
       </div>
 
-      {/* Orange Navigation Bar */}
-      <nav className="bg-gradient-to-r from-[#F08000] via-[#ffb347] to-[#F08000] text-white px-6 py-2 flex justify-between items-center">
+      {/* Blue Navigation Bar */}
+      <nav className="bg-[#1F3A5F] text-white px-6 py-2 flex justify-between items-center shadow-lg shadow-blue-900/20">
         <ul className="hidden md:flex w-full justify-between font-semibold">
           <li className="flex-1 text-center">
-            <Link to="/aboutUs" className="hover:underline">About Us</Link>
+            <Link to="/aboutUs" className="hover:text-[#F08000] transition">About Us</Link>
           </li>
           <li className="flex-1 text-center">
-            <Link to="/products" className="hover:underline">Products & Solutions</Link>
+            <Link to="/products" className="hover:text-[#F08000] transition">Products & Solutions</Link>
           </li>
           <li className="flex-1 text-center">
-            <Link to="/request-quote" className="hover:underline">Quote Form</Link>
+            <Link to="/request-quote" className="hover:text-[#F08000] transition">Quote Form</Link>
           </li>
           {/* <li className="flex-1 text-center">
-            <Link to="/our-brands" className="hover:underline">Our Brands</Link>
+            <Link to="/our-brands" className="hover:text-[#F08000] transition">Our Brands</Link>
           </li> */}
           <li className="flex-1 text-center">
-            <Link to="/success-stories" className="hover:underline">Success Stories</Link>
+            <Link to="/success-stories" className="hover:text-[#F08000] transition">Success Stories</Link>
           </li>
         </ul>
 
@@ -58,7 +58,7 @@ function Navbar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 py-4 text-black text-sm space-y-2 font-medium">
+        <div className="md:hidden bg-white shadow-md px-6 py-4 text-[#1F3A5F] text-sm space-y-2 font-medium">
           <Link to="/aboutUs" className="block hover:text-[#F08000]" onClick={() => setMenuOpen(false)}>About us</Link>
           <Link to="/products" className="block hover:text-[#F08000]" onClick={() => setMenuOpen(false)}>Products & Solutions</Link>
           <Link to="/request-quote" className="block hover:text-[#F08000]" onClick={() => setMenuOpen(false)}>Quote Form</Link>

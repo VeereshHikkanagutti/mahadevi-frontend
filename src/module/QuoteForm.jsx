@@ -32,7 +32,7 @@ function QuoteForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 py-10 relative overflow-hidden">
+  <div className="min-h-screen bg-gradient-to-br from-[#E6EEF8] via-white to-[#E6EEF8] py-10 relative overflow-hidden">
       {/* Decorative SVG background */}
       <div className="absolute inset-0 -z-10 pointer-events-none select-none">
         <svg width="100%" height="100%" viewBox="0 0 800 600" fill="none">
@@ -47,7 +47,7 @@ function QuoteForm() {
       <div className="absolute right-0 top-0 h-full w-1/2 z-0">
         <div className="h-full w-full bg-white"></div>
       </div>
-      <div className="max-w-6xl mx-auto rounded-xl shadow-2xl shadow-[#F0800033] p-8 flex flex-col md:flex-row gap-8 relative animate-fade-in-up overflow-hidden">
+  <div className="max-w-6xl mx-auto rounded-xl shadow-2xl shadow-[#1F3A5F] p-8 flex flex-col md:flex-row gap-8 relative animate-fade-in-up overflow-hidden">
         {/* Colored blur overlays inside the card */}
         <div className="absolute left-0 top-0 h-full w-1/2 z-0">
           <div className="h-full w-full bg-gradient-to-br from-[#F08000]/20 to-transparent backdrop-blur-sm"></div>
@@ -56,31 +56,31 @@ function QuoteForm() {
           <div className="h-full w-full bg-gradient-to-tl from-blue-200/20 to-transparent backdrop-blur-sm"></div>
         </div>
         {/* Card content (set z-10 to keep above overlays) */}
-        <div className="md:w-1/2 flex flex-col items-center justify-center relative z-10">
+  <div className="md:w-1/2 flex flex-col items-center justify-center relative z-10">
           <img
             src= {quote}
             alt="Request a Quote"
             className="w-40 mb-4 animate-bounce"
           />
           <div className="mb-4 text-center">
-            <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-2">
+            <span className="inline-block bg-[#1F3A5F] text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">
               100+ Businesses Served
             </span>
-            <p className="text-gray-700 text-sm">
+            <p className="text-[#6B7280] text-sm">
               Our team responds to all quote requests within 24 hours.<br />
               For urgent queries, call <a href="tel:+919739461453 " className="text-[#F08000] font-semibold">+91 9739461453</a>.
             </p>
           </div>
-          <ul className="mb-6 text-gray-600 text-sm space-y-1 text-left">
+          <ul className="mb-6 text-[#1F3A5F] text-sm space-y-1 text-left font-semibold">
             <li>✔️ Competitive pricing for bulk orders</li>
             <li>✔️ Fast, reliable delivery</li>
             <li>✔️ Custom solutions for your needs</li>
             <li>✔️ Expert technical support</li>
           </ul>
         </div>
-        <div className="md:w-1/2 relative z-10">
-          <h2 className="text-3xl font-bold mb-2 text-blue-800">Request a Quotation</h2>
-          <p className="mb-6 text-gray-600">
+  <div className="md:w-1/2 relative z-10">
+          <h2 className="text-3xl font-bold mb-2 text-[#1F3A5F]">Request a Quotation</h2>
+          <p className="mb-6 text-[#6B7280]">
             Please fill out the form below and our team will get back to you with a detailed quotation.
           </p>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -141,7 +141,7 @@ function QuoteForm() {
             {/* Submit */}
             <button
               type="submit"
-              className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded font-semibold w-full flex items-center justify-center"
+              className="bg-[#1F3A5F] hover:bg-[#16305a] text-white px-6 py-2 rounded font-semibold w-full flex items-center justify-center"
               disabled={isLoading}
             >
               {isLoading ? (
