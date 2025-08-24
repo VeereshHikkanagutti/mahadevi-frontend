@@ -13,7 +13,7 @@ function AdminDashboard() {
         </div>
         <div className="bg-white p-4 shadow rounded">
           <h3 className="text-xl font-semibold">Total Products</h3>
-          <p className="text-2xl text-green-600 mt-2">24</p>
+          <p className="text-2xl text-[#0F0E47] mt-2">24</p>
         </div>
       </div>
     </div>

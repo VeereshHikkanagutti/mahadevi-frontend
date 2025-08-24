@@ -92,7 +92,7 @@ function SuccessStories() {
 					</div>
 					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-blue-200 to-green-400 md:h-1 md:w-24 mx-4"></div>
 					<div className="flex flex-col items-center">
-						<div className="bg-green-400 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+						<div className="bg-[#0F0E47] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
 							2024
 						</div>
 						<span className="text-gray-700 font-medium">Trusted Partner</span>

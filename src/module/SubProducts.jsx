@@ -56,7 +56,7 @@ function SubProducts() {
               &times;
             </button>
             {submitted ? (
-              <div className="text-green-700 font-semibold text-center mt-16">
+              <div className="text-[#0F0E47] font-semibold text-center mt-16">
                 Thank you! Your enquiry has been sent.
               </div>
             ) : (

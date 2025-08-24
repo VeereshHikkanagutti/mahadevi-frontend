@@ -151,7 +151,7 @@ function QuoteForm() {
               )}
             </button>
             {submitted && (
-              <div className="text-green-600 text-center mt-4 animate-fade-in">
+              <div className="text-[#0F0E47] text-center mt-4 animate-fade-in">
                 ✅ Your request has been sent!
               </div>
             )}
