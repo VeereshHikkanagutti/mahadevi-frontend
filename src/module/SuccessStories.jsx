@@ -30,7 +30,7 @@ const stories = [
 function SuccessStories() {
 	return (
 		<div className="max-w-5xl mx-auto py-12 px-4">
-			<h1 className="text-4xl font-bold text-center text-[#F08000] mb-2">
+			<h1 className="text-4xl font-bold text-center text-[#384959] mb-2">
 				Success Stories
 			</h1>
 			<p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ function SuccessStories() {
 						<h2 className="text-xl font-semibold text-blue-900 mb-1">
 							{story.company}
 						</h2>
-						<p className="text-[#F08000] font-medium mb-2 text-center">
+						<p className="text-[#384959] font-medium mb-2 text-center">
 							{story.summary}
 						</p>
 						<p className="text-gray-600 text-sm mb-4 text-center">
@@ -72,7 +72,7 @@ function SuccessStories() {
 				</h2>
 				<div className="flex flex-col md:flex-row items-center justify-between gap-6">
 					<div className="flex flex-col items-center">
-						<div className="bg-[#F08000] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+						<div className="bg-[#384959] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
 							2019
 						</div>
 						<span className="text-gray-700 font-medium">Founded</span>
@@ -80,7 +80,7 @@ function SuccessStories() {
 							Started with a vision to modernize industrial supply
 						</span>
 					</div>
-					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-[#F08000] to-blue-200 md:h-1 md:w-24 mx-4"></div>
+					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-[#384959] to-blue-200 md:h-1 md:w-24 mx-4"></div>
 					<div className="flex flex-col items-center">
 						<div className="bg-blue-200 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
 							2021
@@ -90,9 +90,9 @@ function SuccessStories() {
 							Adopted ERP, real-time tracking, and digital tools
 						</span>
 					</div>
-					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-blue-200 to-green-400 md:h-1 md:w-24 mx-4"></div>
+					<div className="h-12 w-1 bg-gradient-to-b md:bg-gradient-to-r from-blue-200 to-[#384959] md:h-1 md:w-24 mx-4"></div>
 					<div className="flex flex-col items-center">
-						<div className="bg-[#0F0E47] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
+						<div className="bg-[#384959] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-2">
 							2024
 						</div>
 						<span className="text-gray-700 font-medium">Trusted Partner</span>
@@ -108,7 +108,7 @@ function SuccessStories() {
 				</h3>
 				<a
 					href="/contact"
-					className="inline-block bg-[#F08000] hover:bg-[#c96a00] text-white px-6 py-2 rounded-full font-semibold shadow transition"
+					className="inline-block bg-[#384959] hover:bg-[#2d3b47] text-white px-6 py-2 rounded-full font-semibold shadow transition"
 				>
 					Contact Us
 				</a>

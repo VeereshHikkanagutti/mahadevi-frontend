@@ -97,9 +97,9 @@ function AboutUs() {
                   <div className="relative">
                     <div className="text-5xl font-bold text-blue-900 mb-3">
                       <span className="tabular-nums">{isVisible.stats ? count : '0'}</span>
-                      <span className="text-[#0F0E47]">{stat.suffix}</span>
+                      <span className="text-[#384959]">{stat.suffix}</span>
                     </div>
-                    <div className="h-1 w-12 bg-[#0F0E47] mx-auto"></div>
+                    <div className="h-1 w-12 bg-[#384959] mx-auto"></div>
                   </div>
                   <div className="text-sm text-gray-600 uppercase tracking-wider mt-3">{stat.label}</div>
                 </div>
@@ -148,12 +148,12 @@ function AboutUs() {
                   className={`bg-gray-50 p-8 rounded-lg transform ${isVisible.vision ? 'animate-fade-slide-up' : 'opacity-0'}`}
                   style={{ animationDelay: `${item.delay}ms` }}
                 >
-                  <item.icon className="text-4xl text-[#0F0E47] mb-4" />
+                  <item.icon className="text-4xl text-[#384959] mb-4" />
                   <h3 className="text-2xl font-bold text-blue-900 mb-4">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                   <div className="mt-6">
                     <div className="h-1 bg-gray-200 rounded-full">
-                      <div className={`h-full bg-indigo-500 rounded-full ${isVisible.vision ? 'animate-progress' : ''}`}></div>
+                      <div className={`h-full bg-[#384959] rounded-full ${isVisible.vision ? 'animate-progress' : ''}`}></div>
                     </div>
                   </div>
                 </div>
@@ -234,10 +234,10 @@ function AboutUs() {
                   >
                     <div className={`absolute top-1/2 transform -translate-y-1/2 ${
                       milestone.align === 'left' ? '-left-12' : '-right-12'
-                    } w-8 h-8 bg-blue-900 rounded-full border-4 border-white z-10`}></div>
+                    } w-8 h-8 bg-blue-700 rounded-full border-4 border-white z-10`}></div>
                     <div className="flex items-center mb-4">
-                      <milestone.icon className="text-3xl text-[#0F0E47] mr-3" />
-                      <span className="text-[#0F0E47] font-bold text-2xl">{milestone.year}</span>
+                      <milestone.icon className="text-3xl text-[#384959] mr-3" />
+                      <span className="text-[#384959] font-bold text-2xl">{milestone.year}</span>
                     </div>
                     <h3 className="text-2xl font-bold text-blue-900 mb-3">{milestone.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{milestone.desc}</p>
@@ -286,8 +286,8 @@ function AboutUs() {
                   style={{ animationDelay: `${milestone.delay}ms` }}
                 >
                   <div className="flex items-center mb-4">
-                    <milestone.icon className="text-2xl text-[#0F0E47] mr-3" />
-                    <span className="text-[#0F0E47] font-bold text-xl">{milestone.year}</span>
+                    <milestone.icon className="text-2xl text-[#384959] mr-3" />
+                    <span className="text-[#384959] font-bold text-xl">{milestone.year}</span>
                   </div>
                   <h3 className="text-xl font-bold text-blue-900 mb-2">{milestone.title}</h3>
                   <p className="text-gray-600">{milestone.desc}</p>
@@ -307,7 +307,7 @@ function AboutUs() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className={`transform ${isVisible.overview ? 'animate-slide-left' : 'opacity-0'}`}>
-                <h2 className="text-4xl font-bold text-blue-900 mb-8">
+                <h2 className="text-4xl font-bold text-blue-700 mb-8">
                   Leading the Way in Industrial Excellence
                 </h2>
                 <div className="prose prose-lg text-gray-600">
@@ -320,7 +320,7 @@ function AboutUs() {
                 </div>
               </div>
               <div className={`space-y-8 transform ${isVisible.overview ? 'animate-slide-right' : 'opacity-0'}`}>
-                <div className="bg-gradient-to-r from-blue-900 to-blue-800 p-8 rounded-lg text-white">
+                <div className="bg-gradient-to-r from-blue-700 to-blue-600 p-8 rounded-lg text-white">
                   <h3 className="text-2xl font-bold mb-4 flex items-center">
                     <FaChartLine className="mr-3" /> Our Vision
                   </h3>
@@ -328,11 +328,11 @@ function AboutUs() {
                     To be India's most trusted industrial solutions provider, known for quality, innovation, and customer success.
                   </p>
                 </div>
-                <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 p-8 rounded-lg text-white">
+                <div className="bg-gradient-to-r from-[#384959] to-[#2d3b47] p-8 rounded-lg text-white">
                   <h3 className="text-2xl font-bold mb-4 flex items-center">
                     <FaHandshake className="mr-3" /> Our Mission
                   </h3>
-                  <p className="text-[#0F0E47]/50 leading-relaxed">
+                  <p className="text-white/90 leading-relaxed">
                     To revolutionize industrial supply chains through innovation and technical excellence, enabling operational efficiency and sustainable growth.
                   </p>
                 </div>
@@ -346,7 +346,7 @@ function AboutUs() {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-blue-900 mb-12 text-center">
+            <h2 className="text-3xl font-bold text-blue-700 mb-12 text-center">
               Our Core Strengths
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -387,7 +387,7 @@ function AboutUs() {
                   className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
                   <strength.icon className="text-3xl text-blue-600 mb-4" />
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">{strength.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-2">{strength.title}</h3>
                   <p className="text-gray-600">{strength.desc}</p>
                 </div>
               ))}
@@ -402,7 +402,7 @@ function AboutUs() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-blue-900 mb-6">
+                <h2 className="text-3xl font-bold text-blue-700 mb-6">
                   Quality Standards & Certifications
                 </h2>
                 <p className="text-gray-600 mb-8">
@@ -410,15 +410,15 @@ function AboutUs() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
-                    <FaCertificate className="text-[#0F0E47] text-xl" />
+                    <FaCertificate className="text-[#384959] text-xl" />
                     <span className="text-gray-600">ISO 9001:2015 Certified Operations</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <FaCertificate className="text-[#0F0E47] text-xl" />
+                    <FaCertificate className="text-[#384959] text-xl" />
                     <span className="text-gray-600">Authorized Distributor for Premium Brands</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <FaCertificate className="text-[#0F0E47] text-xl" />
+                    <FaCertificate className="text-[#384959] text-xl" />
                     <span className="text-gray-600">Quality Management System Certified</span>
                   </li>
                 </ul>
@@ -447,7 +447,7 @@ function AboutUs() {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-blue-900 py-16">
+      <div className="bg-blue-700 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -459,13 +459,13 @@ function AboutUs() {
             <div className="flex flex-wrap gap-4 justify-center">
               <a
                 href="/contact"
-                className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                className="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
                 Contact Us
               </a>
               <a
                 href="/products"
-                className="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 Explore Solutions
               </a>
