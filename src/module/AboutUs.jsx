@@ -117,7 +117,7 @@ function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">Our Vision for Growth</h2>
+              <h2 className="text-4xl font-bold text-[#1F3A5F] mb-6">Our Vision for Growth</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Building a sustainable future through innovation and excellence in industrial solutions
               </p>
@@ -183,35 +183,43 @@ function AboutUs() {
               {[
                 {
                   year: "2018",
-                  title: "Foundation",
-                  desc: "Established our operations in Karnataka, focusing on industrial supply chain solutions. Started with a small team of experts and a vision to transform the industry.",
+                  title: "Foundation & Vision",
+                  desc: "Established operations in Karnataka with a small, dedicated team of industry experts. Started with core industrial supplies and launched our first business cards and marketing materials to build local presence.",
                   align: "right",
                   icon: FaIndustry,
                   delay: "0"
                 },
                 {
                   year: "2020",
-                  title: "Digital Transformation",
-                  desc: "Implemented state-of-the-art digital inventory systems and expanded our product portfolio. Introduced online ordering and tracking systems for clients.",
+                  title: "Industry Partnerships",
+                  desc: "Strengthened relationships with major industrial clients. Expanded product portfolio and developed strong bonds with manufacturers. Introduced professional branding with updated marketing collateral and product catalogs.",
                   align: "left",
-                  icon: FaGlobe,
+                  icon: FaHandshake,
                   delay: "200"
                 },
                 {
                   year: "2022",
-                  title: "Market Expansion",
-                  desc: "Extended operations to major industrial hubs across South India. Established partnerships with leading international manufacturers.",
+                  title: "Network Expansion",
+                  desc: "Significant growth in our industrial network, serving diverse sectors. Enhanced our product range to include specialized materials and components. Launched comprehensive product brochures and technical documentation.",
                   align: "right",
                   icon: FaChartLine,
                   delay: "400"
                 },
                 {
                   year: "2023",
-                  title: "Innovation Hub",
-                  desc: "Launched our technical consulting division. Achieved ISO certification and expanded our service offerings to include comprehensive industrial solutions.",
+                  title: "Service Excellence",
+                  desc: "Achieved major milestones in customer service and support. Implemented efficient inventory management and quick response systems. Introduced professional service guarantees and quality certificates.",
                   align: "left",
-                  icon: FaLightbulb,
+                  icon: FaCertificate,
                   delay: "600"
+                },
+                {
+                  year: "2025",
+                  title: "Digital Innovation",
+                  desc: "Launched our comprehensive digital platform with modern website and online catalog. Enhanced market presence through digital marketing initiatives and professional brand materials. Streamlined ordering process with digital solutions.",
+                  align: "right",
+                  icon: FaGlobe,
+                  delay: "800"
                 }
               ].map((milestone, index) => (
                 <div 
@@ -251,31 +259,38 @@ function AboutUs() {
               {[
                 {
                   year: "2018",
-                  title: "Foundation",
-                  desc: "Established our operations in Karnataka, focusing on industrial supply chain solutions.",
+                  title: "Foundation & Vision",
+                  desc: "Started operations in Karnataka with a dedicated team and initial marketing materials.",
                   icon: FaIndustry,
                   delay: "0"
                 },
                 {
                   year: "2020",
-                  title: "Digital Transformation",
-                  desc: "Implemented state-of-the-art digital inventory systems and expanded our product portfolio.",
-                  icon: FaGlobe,
+                  title: "Industry Partnerships",
+                  desc: "Built strong relationships with manufacturers and expanded product portfolio.",
+                  icon: FaHandshake,
                   delay: "100"
                 },
                 {
                   year: "2022",
-                  title: "Market Expansion",
-                  desc: "Extended operations to major industrial hubs across South India.",
+                  title: "Network Expansion",
+                  desc: "Grew our industrial network and diversified product offerings.",
                   icon: FaChartLine,
                   delay: "200"
                 },
                 {
                   year: "2023",
-                  title: "Innovation Hub",
-                  desc: "Launched our technical consulting division and achieved ISO certification.",
-                  icon: FaLightbulb,
+                  title: "Service Excellence",
+                  desc: "Enhanced customer service and implemented efficient management systems.",
+                  icon: FaCertificate,
                   delay: "300"
+                },
+                {
+                  year: "2025",
+                  title: "Digital Innovation",
+                  desc: "Launched comprehensive digital platform and enhanced online presence.",
+                  icon: FaGlobe,
+                  delay: "400"
                 }
               ].map((milestone, index) => (
                 <div 
@@ -307,7 +322,7 @@ function AboutUs() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className={`transform ${isVisible.overview ? 'animate-slide-left' : 'opacity-0'}`}>
-                <h2 className="text-4xl font-bold text-blue-700 mb-8">
+                <h2 className="text-4xl font-bold text-blue-900 mb-8">
                   Leading the Way in Industrial Excellence
                 </h2>
                 <div className="prose prose-lg text-gray-600">
@@ -320,7 +335,7 @@ function AboutUs() {
                 </div>
               </div>
               <div className={`space-y-8 transform ${isVisible.overview ? 'animate-slide-right' : 'opacity-0'}`}>
-                <div className="bg-gradient-to-r from-blue-700 to-blue-600 p-8 rounded-lg text-white">
+                <div className="bg-gradient-to-r from-blue-900 to-blue-900 p-8 rounded-lg text-white">
                   <h3 className="text-2xl font-bold mb-4 flex items-center">
                     <FaChartLine className="mr-3" /> Our Vision
                   </h3>
@@ -346,7 +361,7 @@ function AboutUs() {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-blue-700 mb-12 text-center">
+            <h2 className="text-3xl font-bold text-blue-900 mb-12 text-center">
               Our Core Strengths
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -386,8 +401,8 @@ function AboutUs() {
                   key={strength.title}
                   className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <strength.icon className="text-3xl text-blue-600 mb-4" />
-                  <h3 className="text-xl font-bold text-blue-700 mb-2">{strength.title}</h3>
+                  <strength.icon className="text-3xl text-blue-900 mb-4" />
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">{strength.title}</h3>
                   <p className="text-gray-600">{strength.desc}</p>
                 </div>
               ))}
@@ -396,13 +411,13 @@ function AboutUs() {
         </div>
       </div>
 
-      {/* Certifications & Quality */}
+      {/* Certifications & Quality Section - Commented Out
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-blue-700 mb-6">
+                <h2 className="text-3xl font-bold text-blue-900 mb-6">
                   Quality Standards & Certifications
                 </h2>
                 <p className="text-gray-600 mb-8">
@@ -445,9 +460,10 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      */}
 
       {/* Call to Action */}
-      <div className="bg-blue-700 py-16">
+      <div className="bg-[#1F3A5F] py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">

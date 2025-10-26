@@ -3,7 +3,6 @@ import img1 from '../assets/1.jpg';
 import img2 from '../assets/buildfeature.jpg';
 import img3 from '../assets/beariings.jpg';
 import img4 from '../assets/valves.jpg';
-import { productsData } from './Products';
 import { Link } from 'react-router-dom';
 import delivery from '../assets/delivery.svg';
 import trust from '../assets/trust.svg';
@@ -13,31 +12,37 @@ const mainProducts = [
   {
     id: 1,
     name: "Bearings",
+    Link: "products?category=bearing",
     description: "Premium quality industrial bearings for all applications"
   },
   {
     id: 2,
     name: "Industrial Valves",
+    Link: "products?category=valves",
     description: "High-performance valves for process control"
   },
   {
     id: 3,
     name: "Gears & Gearboxes",
+    Link: "products?category=gear",
     description: "Precision engineered power transmission solutions"
   },
   {
     id: 4,
     name: "Pumps",
+    Link: "products?category=pumps",
     description: "Reliable industrial pumps for every requirement"
   },
   {
     id: 5,
     name: "Seals & Gaskets",
+    Link: "products?category=seals",
     description: "Advanced sealing solutions for industrial applications"
   },
   {
     id: 6,
     name: "Tools & Equipment",
+    Link: "products?category=tools",
     description: "Professional-grade industrial tools and equipment"
   }
 ];
@@ -72,13 +77,13 @@ function Home() {
               className="text-xl md:text-3xl font-medium text-white mb-6 drop-shadow-xl tracking-tight max-w-2xl animate-slide-in" 
               style={{fontFamily: 'Plus Jakarta Sans, sans-serif', animationDelay: '0.3s'}}
             >
-              Pioneering Industrial Excellence through Advanced Supply Chain Solutions & Engineering Innovation
+              Your Trusted Partner in Sugar Industry Equipment & Components
             </h1>
             <blockquote 
               className="text-lg md:text-2xl text-blue-50 font-light mb-8 max-w-2xl leading-relaxed animate-fade-up" 
               style={{fontFamily: 'Plus Jakarta Sans, sans-serif', animationDelay: '0.6s'}}
             >
-              "Your Strategic Partner in Industrial Transformation - Delivering Premium-Grade Components, Advanced Engineered Solutions, and Unparalleled Technical Expertise to Drive Your Operational Success and Manufacturing Excellence"
+              "Specialized in Critical Sugar Mill Components - Delivering Quality, Reliability, and 24/7 Support for Your Operations"
             </blockquote>
           </div>
         </div>
@@ -155,7 +160,7 @@ function Home() {
                 Advancing Industrial Excellence Through Strategic Supply Solutions
               </h2>
               <p className="text-lg text-[#4B5563] mb-8 leading-relaxed">
-                As a premier industrial solutions provider, we deliver comprehensive product portfolios and expert services across manufacturing, processing, and automation sectors. Our commitment to excellence drives innovation and efficiency in every industrial operation we support.
+                As a premier industrial solutions provider, we deliver comprehensive product portfolios and expert  logistics services across manufacturing, processing, and automation sectors. Our commitment to excellence drives innovation and efficiency in every industrial operation we support.
               </p>
               
               {/* Stats Grid */}
@@ -222,7 +227,7 @@ function Home() {
                   <h3 className="text-xl font-bold text-[#1F3A5F] mb-2 group-hover:text-[#F08000] transition-colors">{prod.name}</h3>
                   <p className="text-[#4B5563] text-sm mb-4 group-hover:text-[#1F3A5F] transition-colors">{prod.description}</p>
                   <Link 
-                    to={`/products/${prod.id}`}
+                    to={`${prod.Link}`}
                     className="text-[#F08000] hover:text-[#E67600] font-semibold inline-flex items-center group"
                   >
                     Learn More
@@ -326,10 +331,10 @@ function Home() {
                 Empowering Industry Leaders with Cutting-Edge Solutions and Unmatched Expertise
               </p>
               <p className="text-blue-100 mb-8 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                With our robust global supply chain network, state-of-the-art quality control systems, and over 5 years of specialized industry expertise, we deliver excellence in every component and service. Our commitment to innovation and reliability makes us the preferred choice for businesses seeking sustainable growth and operational excellence.
+                With our robust supply chain network, state-of-the-art quality control systems, and over 5 years of specialized industry expertise, we deliver excellence in every component and service. Our commitment to innovation and reliability makes us the preferred choice for businesses seeking sustainable growth and operational excellence.
               </p>
               <Link
-                to="/about-us"
+                to="/aboutUs"
                 className="inline-block bg-white hover:bg-[#F08000] hover:text-white text-[#1F3A5F] px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 transform hover:translate-y-[-2px] animate-fade-up"
                 style={{animationDelay: '0.6s'}}
               >

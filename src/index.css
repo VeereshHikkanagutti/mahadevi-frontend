@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-black;
+:root {
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    @apply bg-gray-900 text-white;
-  }
+body {
+  background-color: theme('colors.gray.50');
+  color: theme('colors.black');
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: theme('colors.gray.900');
+  color: theme('colors.white');
 }
 
 .loader {

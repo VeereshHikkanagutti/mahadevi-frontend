@@ -1,13 +1,30 @@
 import { useParams, Link } from "react-router-dom";
-import { productsData } from "./Products";
+import valveProducts from '../data/productList/valves';
+import bearingProducts from '../data/productList/bearings';
+import gearProducts from '../data/productList/gears';
 import ProductCard from "../components/ProductCard";
 import { useState } from "react";
 
 function SubProducts() {
   const { productId } = useParams();
-  const product = productsData.find((p) => p.id === Number(productId));
   const [enquireSubProduct, setEnquireSubProduct] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+  
+  const getProductData = (id) => {
+    const numId = Number(id);
+    switch(numId) {
+      case 1:
+        return { id: 1, name: "Bearings", products: bearingProducts };
+      case 2:
+        return { id: 2, name: "Industrial Valves", products: valveProducts };
+      case 3:
+        return { id: 3, name: "Gears & Gearboxes", products: gearProducts };
+      default:
+        return null;
+    }
+  };
+
+  const product = getProductData(productId);
 
   if (!product) return <div className="text-white p-8">Product not found.</div>;
 
