@@ -9,11 +9,13 @@ import Products from "./module/Products";
 import SubProducts from "./module/SubProducts";
 import OurBrands from "./module/OurBrands";
 import SuccessStories from "./module/SuccessStories";
+import SocialContacts from "./components/SocialContacts";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <SocialContacts />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />

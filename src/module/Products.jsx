@@ -5,6 +5,14 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import valveProducts from '../data/productList/valves';
 import bearingProducts from '../data/productList/bearings';
 import gearProducts from '../data/productList/gears';
+import fastenerProducts from '../data/productList/fasteners';
+import gasketProducts from '../data/productList/gaskets';
+import flangeProducts from '../data/productList/flanges';
+import instrumentProducts from '../data/productList/instruments';
+import liftingProducts from '../data/productList/lifting';
+import pipeProducts from '../data/productList/pipes';
+import safetyProducts from '../data/productList/safety';
+import toolProducts from '../data/productList/tools';
 import productCategories from '../data/productCategories';
 
 function Products() {
@@ -50,11 +58,47 @@ function Products() {
         case 'gears':
           products = gearProducts;
           break;
+        case 'fasteners':
+          products = fastenerProducts;
+          break;
+        case 'gaskets':
+          products = gasketProducts;
+          break;
+        case 'flanges':
+          products = flangeProducts;
+          break;
+        case 'instruments':
+          products = instrumentProducts;
+          break;
+        case 'lifting':
+          products = liftingProducts;
+          break;
+        case 'pipes':
+          products = pipeProducts;
+          break;
+        case 'safety':
+          products = safetyProducts;
+          break;
+        case 'tools':
+          products = toolProducts;
+          break;
         default:
           products = [];
       }
     } else {
-      products = [...bearingProducts, ...valveProducts, ...gearProducts];
+      products = [
+        ...bearingProducts,
+        ...valveProducts,
+        ...gearProducts,
+        ...fastenerProducts,
+        ...gasketProducts,
+        ...flangeProducts,
+        ...instrumentProducts,
+        ...liftingProducts,
+        ...pipeProducts,
+        ...safetyProducts,
+        ...toolProducts
+      ];
     }
 
     return products.filter(product =>

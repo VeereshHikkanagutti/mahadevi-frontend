@@ -12,8 +12,8 @@ const mainProducts = [
   {
     id: 1,
     name: "Bearings",
-    Link: "products?category=bearing",
-    description: "Premium quality industrial bearings for all applications"
+    Link: "products?category=bearings",
+    description: "Premium quality in dustrial bearings for all applications"
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const mainProducts = [
   {
     id: 3,
     name: "Gears & Gearboxes",
-    Link: "products?category=gear",
+    Link: "products?category=gears",
     description: "Precision engineered power transmission solutions"
   },
   {
@@ -36,7 +36,7 @@ const mainProducts = [
   {
     id: 5,
     name: "Seals & Gaskets",
-    Link: "products?category=seals",
+    Link: "products?category=gaskets",
     description: "Advanced sealing solutions for industrial applications"
   },
   {
