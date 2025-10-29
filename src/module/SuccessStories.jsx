@@ -1,290 +1,309 @@
-import React, { useState } from "react";
-import { FaStar, FaQuoteRight, FaIndustry, FaChartLine, FaCheckCircle, FaArrowRight } from "react-icons/fa";
-
-const stories = [
-  {
-    company: "Shree Sugars Ltd.",
-    industry: "Sugar Manufacturing",
-    logo: "https://img.icons8.com/color/48/000000/factory.png",
-    summary: "Reduced downtime by 30% with our rapid supply of critical bearings",
-    challenge: "Frequent production delays due to bearing failures and slow replacement process",
-    solution: "Implemented just-in-time inventory system with 24-hour delivery guarantee",
-    results: [
-      "30% reduction in equipment downtime",
-      "₹15 lakhs annual maintenance cost savings",
-      "Zero production delays in last 6 months"
-    ],
-    details: "Shree Sugars Ltd. faced frequent breakdowns due to delayed bearing replacements. Our team ensured same-day dispatch and technical support, resulting in a 30% reduction in downtime and improved production efficiency.",
-    person: "Mr. Ramesh Kumar",
-    position: "Maintenance Head",
-    image: "/path-to-image.jpg", // Add actual image path
-    rating: 5,
-    year: "2023"
-  },
-  {
-    company: "Vijay Engineering Works",
-    industry: "Industrial Manufacturing",
-    logo: "https://img.icons8.com/color/48/000000/engineering.png",
-    summary: "Enabled on-time commissioning of a new plant with custom valves",
-    challenge: "Complex requirements for custom valves with tight deadline",
-    solution: "Specialized valve design and expedited manufacturing process",
-    results: [
-      "Project completed 2 weeks ahead of schedule",
-      "100% compliance with specifications",
-      "20% cost savings through efficient sourcing"
-    ],
-    details: "Vijay Engineering Works needed custom valves for a new sugar plant. We sourced and delivered the required components ahead of schedule, helping them commission the plant on time.",
-    person: "Ms. Priya Desai",
-    position: "Project Manager",
-    image: "/path-to-image.jpg", // Add actual image path
-    rating: 5,
-    year: "2023"
-  },
-  {
-    company: "GreenCity Power",
-    industry: "Power Generation",
-    logo: "https://img.icons8.com/color/48/000000/renewable-energy.png",
-    summary: "Improved reliability with quality gear assemblies",
-    challenge: "Frequent gear failures causing power generation disruptions",
-    solution: "Premium quality gear assemblies with preventive maintenance plan",
-    results: [
-      "85% reduction in gear failures",
-      "40% increase in equipment lifespan",
-      "Annual savings of ₹25 lakhs"
-    ],
-    details: "GreenCity Power was struggling with frequent gear failures. Our high-quality gear assemblies improved reliability and reduced maintenance costs significantly.",
-    person: "Mr. Sandeep Singh",
-    position: "Operations Lead",
-    image: "/path-to-image.jpg", // Add actual image path
-    rating: 5,
-    year: "2024"
-  }
-];
-
-const statistics = [
-  { number: "24/7", label: "Support Availability" },
-  { number: "2000+", label: "Products Available" },
-  { number: "30+", label: "Industry Partners" },
-  { number: "6hrs", label: "Average Response Time" }
-];
+import React from "react";
+import {
+  FaIndustry,
+  FaChartLine,
+  FaHandshake,
+  FaCertificate,
+  FaGlobe,
+  FaComments,
+  FaBullseye,
+  FaUsers,
+  FaTrophy,
+  FaAward,
+  FaShieldAlt,
+  FaClock,
+} from "react-icons/fa";
 
 function SuccessStories() {
-  const [selectedStory, setSelectedStory] = useState(null);
+  const milestones = [
+    {
+      year: "2018",
+      title: "Foundation & Vision",
+      desc: "Started our operations in Karnataka with a vision to redefine industrial supply reliability and service quality.",
+      icon: FaIndustry,
+    },
+    {
+      year: "2020",
+      title: "Building Partnerships",
+      desc: "Formed long-term collaborations with manufacturers and industrial clients, expanding our reach and trust.",
+      icon: FaHandshake,
+    },
+    {
+      year: "2022",
+      title: "Expanding Horizons",
+      desc: "Served multiple sectors with tailored industrial solutions, backed by a growing distribution network.",
+      icon: FaChartLine,
+    },
+    {
+      year: "2023",
+      title: "Commitment to Quality",
+      desc: "Introduced enhanced quality control systems and client support mechanisms to ensure consistent service excellence.",
+      icon: FaCertificate,
+    },
+    {
+      year: "2025",
+      title: "Digital Transformation",
+      desc: "Launched our digital catalog and smart ordering platform — making industrial sourcing faster and simpler.",
+      icon: FaGlobe,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-[#1F3A5F] text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Your Success Starts Here
-            </h1>
-            <p className="text-xl text-blue-100 mb-12">
-              Learn how we can help transform your industrial operations with our
-              innovative solutions and dedicated support
+      <div className="relative bg-gradient-to-br from-[#1F3A5F] via-[#2a4a6f] to-[#1F3A5F] text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-[#00a8e1] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#00a8e1] rounded-full blur-3xl"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Our Success, Built on Your Trust
+          </h1>
+          <p className="text-xl text-blue-100 leading-relaxed">
+            Every milestone we've achieved is a reflection of the strong partnerships
+            we've built with our clients. Together, we've turned challenges into
+            opportunities, and opportunities into lasting success.
+          </p>
+        </div>
+      </div>
+
+      {/* Intro Narrative Section with Stats */}
+      <div className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mb-6">
+              A Journey of Trust and Excellence
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+              From our humble beginnings in Karnataka to becoming a trusted name in
+              industrial supplies, our journey has been guided by a commitment to
+              excellence, innovation, and reliability. We continue to grow — not just as a business, but as a partner in
+              progress for industries across India.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {statistics.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#F08000] mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-blue-100">{stat.label}</div>
-                </div>
-              ))}
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+            <div className="bg-gradient-to-br from-[#00a8e1] to-[#0090c7] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">
+              <FaUsers className="text-4xl mx-auto mb-3" />
+              <div className="text-3xl font-bold mb-1">20+</div>
+              <div className="text-sm opacity-90">Happy Clients</div>
+            </div>
+            <div className="bg-gradient-to-br from-[#25d366] to-[#1fb855] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">
+              <FaTrophy className="text-4xl mx-auto mb-3" />
+              <div className="text-3xl font-bold mb-1">7+</div>
+              <div className="text-sm opacity-90">Years Experience</div>
+            </div>
+            <div className="bg-gradient-to-br from-[#F08000] to-[#d67200] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">
+              <FaAward className="text-4xl mx-auto mb-3" />
+              <div className="text-3xl font-bold mb-1">250+</div>
+              <div className="text-sm opacity-90">Products Delivered</div>
+            </div>
+            <div className="bg-gradient-to-br from-[#1F3A5F] to-[#152840] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">
+              <FaShieldAlt className="text-4xl mx-auto mb-3" />
+              <div className="text-3xl font-bold mb-1">100%</div>
+              <div className="text-sm opacity-90">Quality Assured</div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Featured Success Stories */}
-      <div className="py-20">
+      {/* Success Journey Timeline */}
+      <div className="bg-gray-100 py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-12">
-              How We Can Help You Succeed
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {stories.map((story, idx) => (
+          <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-4">
+            Our Journey of Excellence
+          </h2>
+          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            Every year marks a new chapter in our commitment to serve industries with integrity, innovation, and dedication.
+          </p>
+
+          {/* Desktop Timeline */}
+          <div className="hidden md:block relative max-w-5xl mx-auto">
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-300 via-blue-500 to-blue-800"></div>
+
+            {milestones.map((milestone, index) => {
+              const align = index % 2 === 0 ? "right" : "left";
+              return (
                 <div
-                  key={idx}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  key={milestone.year}
+                  className={`relative flex items-center mb-20 ${
+                    align === "left" ? "justify-start" : "justify-end"
+                  }`}
                 >
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <img
-                        src={story.logo}
-                        alt={story.company}
-                        className="w-12 h-12"
-                      />
-                      <div className="flex">
-                        {[...Array(story.rating)].map((_, i) => (
-                          <FaStar key={i} className="text-yellow-400" />
-                        ))}
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-[#1F3A5F] mb-2">
-                      {story.company}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">{story.industry}</p>
-                    <div className="border-l-4 border-[#F08000] pl-4 mb-4">
-                      <p className="text-gray-600 italic">{story.summary}</p>
-                    </div>
-                    <button
-                      onClick={() => setSelectedStory(story)}
-                      className="text-[#F08000] hover:text-[#1F3A5F] transition-colors flex items-center text-sm font-medium"
+                  <div
+                    className={`w-5/12 ${
+                      align === "left" ? "ml-auto mr-10" : "mr-auto ml-10"
+                    } bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all`}
+                  >
+                    <div
+                      className={`absolute top-1/2 transform -translate-y-1/2 ${
+                        align === "left" ? "-left-[1.6rem]" : "-right-[1.6rem]"
+                      } w-8 h-8 bg-[#00a8e1] rounded-full border-4 border-white shadow-md z-10 flex items-center justify-center`}
                     >
-                      Read Full Story <FaArrowRight className="ml-2" />
-                    </button>
-                  </div>
-                  <div className="bg-gray-50 p-6 border-t">
-                    <div className="flex items-center">
-                      <div>
-                        <p className="font-semibold text-[#1F3A5F]">
-                          {story.person}
-                        </p>
-                        <p className="text-sm text-gray-600">{story.position}</p>
-                      </div>
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
+
+                    <div className="flex items-center mb-3">
+                      <milestone.icon className="text-3xl text-[#00a8e1] mr-3" />
+                      <span className="text-[#1F3A5F] font-bold text-2xl">
+                        {milestone.year}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#1F3A5F] mb-2">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {milestone.desc}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        </div>
-      </div>
 
-      {/* Results Overview */}
-      <div className="bg-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-12">
-              Our Commitment to Excellence
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-6 rounded-lg bg-gray-50">
-                <FaIndustry className="text-4xl text-[#F08000] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-[#1F3A5F] mb-2">
-                  Operational Efficiency
-                </h3>
-                <p className="text-gray-600">
-                  Fast response times and efficient solutions for minimal downtime
-                </p>
-              </div>
-              <div className="text-center p-6 rounded-lg bg-gray-50">
-                <FaChartLine className="text-4xl text-[#F08000] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-[#1F3A5F] mb-2">
-                  Cost Optimization
-                </h3>
-                <p className="text-gray-600">
-                  Competitive pricing and efficient sourcing for maximum value
-                </p>
-              </div>
-              <div className="text-center p-6 rounded-lg bg-gray-50">
-                <FaCheckCircle className="text-4xl text-[#F08000] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-[#1F3A5F] mb-2">
-                  Quality First
-                </h3>
-                <p className="text-gray-600">
-                  Rigorous quality control and authentic product sourcing
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal for Story Details */}
-      {selectedStory && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#1F3A5F] mb-2">
-                    {selectedStory.company}
+          {/* Mobile Timeline */}
+          <div className="md:hidden space-y-8">
+            {milestones.map((milestone) => (
+              <div key={milestone.year} className="relative pl-12">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-[#00a8e1] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                  <milestone.icon className="text-white text-lg" />
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                  <span className="text-[#00a8e1] font-bold text-xl block mb-2">
+                    {milestone.year}
+                  </span>
+                  <h3 className="text-xl font-bold text-[#1F3A5F] mb-2">
+                    {milestone.title}
                   </h3>
-                  <p className="text-gray-600">{selectedStory.industry}</p>
-                </div>
-                <button
-                  onClick={() => setSelectedStory(null)}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  ✕
-                </button>
-              </div>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-[#1F3A5F] mb-2">Challenge</h4>
-                  <p className="text-gray-600">{selectedStory.challenge}</p>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-[#1F3A5F] mb-2">Our Solution</h4>
-                  <p className="text-gray-600">{selectedStory.solution}</p>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-[#1F3A5F] mb-2">Results</h4>
-                  <ul className="space-y-2">
-                    {selectedStory.results.map((result, index) => (
-                      <li key={index} className="flex items-center text-gray-600">
-                        <FaCheckCircle className="text-green-500 mr-2" />
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div className="border-t pt-6 mt-6">
-                  <div className="flex items-center">
-                    <FaQuoteRight className="text-[#F08000] text-3xl mr-4" />
-                    <div>
-                      <p className="text-gray-600 italic mb-2">
-                        "{selectedStory.details}"
-                      </p>
-                      <p className="font-semibold text-[#1F3A5F]">
-                        {selectedStory.person}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        {selectedStory.position}
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-gray-600 leading-relaxed text-sm">
+                    {milestone.desc}
+                  </p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Why Industries Trust Us */}
+      <div className="bg-white py-20">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-4">
+            Why Industries Trust Mahadevi Enterprise
+          </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Our success is built on pillars of reliability, quality, and unwavering commitment to client satisfaction.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="bg-[#00a8e1] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaHandshake className="text-3xl text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[#1F3A5F] mb-3">
+                Collaborative Partnerships
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Open, transparent, and responsive communication with our clients
+                ensures smooth operations and mutual growth.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="bg-[#00a8e1] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaBullseye className="text-3xl text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[#1F3A5F] mb-3">
+                Focused Excellence
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Every message, meeting, and milestone is directed towards one
+                goal — delivering consistent, measurable excellence.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="bg-[#00a8e1] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaCertificate className="text-3xl text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-[#1F3A5F] mb-3">
+                Continuous Improvement
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We listen, adapt, and evolve through client feedback to
+                continuously raise our performance standards.
+              </p>
             </div>
           </div>
         </div>
-      )}
+      </div>
 
-      {/* Call to Action */}
-      <div className="bg-[#1F3A5F] text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Let's Build Success Together
-            </h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Partner with us to optimize your industrial operations and achieve excellence
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-block bg-white text-[#1F3A5F] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/request-quote"
-                className="inline-block bg-[#F08000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#F08000]/90 transition-colors"
-              >
-                Request a Quote
-              </a>
+      {/* Client Testimonials Section */}
+      <div className="bg-gray-100 py-20">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Real feedback from real partners who trust us with their industrial supply needs.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[#00a8e1]">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-[#00a8e1] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  R
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-bold text-[#1F3A5F]">Rajesh Kumar</h4>
+                  <p className="text-sm text-gray-500">Production Manager, Sugar Mill</p>
+                </div>
+              </div>
+              <p className="text-gray-600 italic leading-relaxed">
+                "Mahadevi Enterprise has been our go-to supplier for bearings and valves. Their prompt delivery and quality products have never disappointed us. Highly reliable partner!"
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[#00a8e1]">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-[#00a8e1] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  S
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-bold text-[#1F3A5F]">Suresh Patil</h4>
+                  <p className="text-sm text-gray-500">Maintenance Head, Manufacturing Unit</p>
+                </div>
+              </div>
+              <p className="text-gray-600 italic leading-relaxed">
+                "Professional service and competitive pricing. They understand our urgent needs and always come through. A trusted name in industrial supplies."
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Feedback Section */}
+      <div className="bg-gradient-to-br from-[#1F3A5F] via-[#2a4a6f] to-[#1F3A5F] text-white py-20">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm">
+            <FaComments className="text-5xl text-[#00a8e1]" />
+          </div>
+          <h2 className="text-3xl font-bold mb-4">
+            Your Feedback Helps Us Improve
+          </h2>
+          <p className="text-lg text-blue-100 mb-10 leading-relaxed">
+            We value your voice — share your thoughts, experiences, and ideas to
+            help us serve you better every day. Your insights drive our continuous improvement.
+          </p>
+
+          <a
+            href="/contact"
+            className="inline-block bg-[#00a8e1] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0090c7] transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            Share Your Feedback
+          </a>
         </div>
       </div>
     </div>

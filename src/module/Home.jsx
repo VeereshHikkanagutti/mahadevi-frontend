@@ -1,387 +1,405 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaArrowRight, FaCheckCircle, FaTruck, FaShieldAlt, FaClock, FaAward } from 'react-icons/fa';
 import img1 from '../assets/1.jpg';
 import img2 from '../assets/buildfeature.jpg';
 import img3 from '../assets/beariings.jpg';
 import img4 from '../assets/valves.jpg';
-import { Link } from 'react-router-dom';
 import delivery from '../assets/delivery.svg';
 import trust from '../assets/trust.svg';
 import quality from '../assets/quality.svg';
 
+const heroImages = [img1, img2, img3, img4];
+
 const mainProducts = [
-  {
-    id: 1,
-    name: "Bearings",
-    Link: "products?category=bearings",
-    description: "Premium quality in dustrial bearings for all applications"
+  { id: 1, name: "Bearings", link: "products?category=bearings", description: "Premium quality industrial bearings for all applications", icon: "🔩" },
+  { id: 2, name: "Industrial Valves", link: "products?category=valves", description: "High-performance valves for process control", icon: "⚙️" },
+  { id: 3, name: "Gears & Gearboxes", link: "products?category=gears", description: "Precision engineered power transmission solutions", icon: "🔧" },
+  { id: 4, name: "Pumps", link: "products?category=pumps", description: "Reliable industrial pumps for every requirement", icon: "💧" },
+  { id: 5, name: "Seals & Gaskets", link: "products?category=gaskets", description: "Advanced sealing solutions for industrial applications", icon: "🛡️" },
+  { id: 6, name: "Tools & Equipment", link: "products?category=tools", description: "Professional-grade industrial tools and equipment", icon: "🔨" }
+];
+
+const stats = [
+  { value: "7+", label: "Years of Excellence", icon: FaAward },
+  { value: "500+", label: "Happy Clients", icon: FaCheckCircle },
+  { value: "10+", label: "Cities Served", icon: FaTruck },
+  { value: "100%", label: "Quality Assured", icon: FaShieldAlt }
+];
+
+const expertise = [
+  { 
+    title: "Sugar Industry Solutions", 
+    desc: "Specialized equipment and components for sugar mills, ensuring optimal performance and minimal downtime.",
+    imgPath: "/src/assets/industry/manufacturing.jpg" 
   },
-  {
-    id: 2,
-    name: "Industrial Valves",
-    Link: "products?category=valves",
-    description: "High-performance valves for process control"
+  { 
+    title: "Industrial Components", 
+    desc: "Comprehensive range of bearings, valves, and transmission systems for manufacturing excellence.",
+    imgPath: "/src/assets/industry/automation.jpg" 
   },
-  {
-    id: 3,
-    name: "Gears & Gearboxes",
-    Link: "products?category=gears",
-    description: "Precision engineered power transmission solutions"
+  { 
+    title: "Quick Response Service", 
+    desc: "24/7 support with rapid delivery ensuring your operations never stop.",
+    imgPath: "/src/assets/industry/engineering.jpg" 
   },
-  {
-    id: 4,
-    name: "Pumps",
-    Link: "products?category=pumps",
-    description: "Reliable industrial pumps for every requirement"
+  { 
+    title: "Quality Assurance", 
+    desc: "Rigorous testing and certification ensuring every product meets the highest industry standards.",
+    imgPath: "/src/assets/industry/quality.jpg" 
+  }
+];
+
+const features = [
+  { 
+    img: delivery, 
+    icon: FaTruck,
+    title: '24/7 Quick Response', 
+    desc: 'Emergency breakdown? We deliver critical components within hours. Your operations never stop with our rapid response system.' 
   },
-  {
-    id: 5,
-    name: "Seals & Gaskets",
-    Link: "products?category=gaskets",
-    description: "Advanced sealing solutions for industrial applications"
+  { 
+    img: trust, 
+    icon: FaCheckCircle,
+    title: 'Sugar Mill Specialists', 
+    desc: 'Deep expertise in sugar industry equipment. We understand your machinery, your challenges, and deliver the right solutions.' 
   },
-  {
-    id: 6,
-    name: "Tools & Equipment",
-    Link: "products?category=tools",
-    description: "Professional-grade industrial tools and equipment"
+  { 
+    img: quality, 
+    icon: FaShieldAlt,
+    title: 'Genuine Parts Guaranteed', 
+    desc: 'Only authentic products from authorized dealers. Every component comes with manufacturer warranty and quality certification.' 
   }
 ];
 
 function Home() {
-  const heroImages = [img1, img2, img3, img4];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const imgInterval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % heroImages.length);
     }, 6000);
-    return () => {
-      clearInterval(imgInterval);
-    };
+    return () => clearInterval(imgInterval);
   }, []);
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section - Improved */}
       <div className="relative w-screen h-screen overflow-hidden">
-        {/* Static Text Layer - Always visible on top */}
-        <div className="absolute inset-0 z-30 flex items-center px-4">
-          <div className="flex flex-col justify-center items-start h-full md:pl-24 pl-4 max-w-3xl w-full md:w-3/5">
-            <span 
-              className="block text-[2rem] md:text-[4.5rem] font-bold tracking-tight text-white drop-shadow-lg leading-none mb-4 animate-fade-in" 
-              style={{letterSpacing: '-0.02em', fontFamily: 'Plus Jakarta Sans, sans-serif'}}
-            >
-              MAHADEVI ENTERPRISE
-            </span>
-            <h1 
-              className="text-xl md:text-3xl font-medium text-white mb-6 drop-shadow-xl tracking-tight max-w-2xl animate-slide-in" 
-              style={{fontFamily: 'Plus Jakarta Sans, sans-serif', animationDelay: '0.3s'}}
-            >
-              Your Trusted Partner in Sugar Industry Equipment & Components
-            </h1>
-            <blockquote 
-              className="text-lg md:text-2xl text-blue-50 font-light mb-8 max-w-2xl leading-relaxed animate-fade-up" 
-              style={{fontFamily: 'Plus Jakarta Sans, sans-serif', animationDelay: '0.6s'}}
-            >
-              "Specialized in Critical Sugar Mill Components - Delivering Quality, Reliability, and 24/7 Support for Your Operations"
-            </blockquote>
+        {/* Background Images */}
+        {heroImages.map((img, idx) => (
+          <div
+            key={idx}
+            className={`absolute inset-0 transition-opacity duration-1000 ${current === idx ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <img
+              src={img}
+              alt={`slide-${idx}`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          </div>
+        ))}
+
+        {/* Content Overlay */}
+        <div className="absolute inset-0 z-30 flex items-center">
+          <div className="container mx-auto px-6 md:px-12 max-w-7xl">
+            <div className="max-w-3xl">
+              <div className="inline-block bg-[#00a8e1]/20 backdrop-blur-sm border border-[#00a8e1]/30 rounded-full px-4 py-2 mb-6">
+                <span className="text-[#00a8e1] font-semibold text-sm">🏭 Your Industrial Supply Partner</span>
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                MAHADEVI<br/>
+                <span className="text-[#00a8e1]">ENTERPRISE</span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-white mb-4 font-medium">
+                Powering Sugar Mills & Industries
+              </p>
+              
+              <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                Specialized in bearings, valves, gears, and industrial components.
+                Delivering quality with 24/7 support for uninterrupted operations.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <Link 
+                  to="/request-quote" 
+                  className="group bg-[#00a8e1] hover:bg-[#0090c7] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
+                >
+                  Get a Quote
+                  <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link 
+                  to="/products" 
+                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-all"
+                >
+                  View Products
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-        {/* Background darken overlay - very subtle */}
-        <div className="absolute inset-0 z-20 bg-black/30"></div>
-        {/* Slideshow Images */}
-        {heroImages.map((img, idx) => (
-          <img
-            key={idx}
-            src={img}
-            alt={`slide-${idx}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${current === idx ? 'opacity-100' : 'opacity-0'}`}
-          />
-        ))}
-        {/* Slideshow Dots */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-20 pointer-events-auto select-auto">
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
           {heroImages.map((_, idx) => (
             <button
               key={idx}
-              className={`w-3 h-3 rounded-full border-2 border-white transition-all duration-300 ${current === idx ? 'bg-[#F08000] scale-125' : 'bg-white/40'}`}
+              className={`h-2 rounded-full transition-all ${
+                current === idx ? 'w-12 bg-[#00a8e1]' : 'w-2 bg-white/50 hover:bg-white/70'
+              }`}
               onClick={() => setCurrent(idx)}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
         </div>
-        <style>{`
-          @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(40px);}
-            to { opacity: 1; transform: translateY(0);}
-          }
-          @keyframes fade-in {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
-          @keyframes slide-in {
-            from { opacity: 0; transform: translateX(-40px); }
-            to { opacity: 1; transform: translateX(0); }
-          }
-          @keyframes scale-in {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-          }
-          @keyframes bounce-in {
-            0% { opacity: 0; transform: scale(0.3); }
-            50% { transform: scale(1.05); }
-            70% { transform: scale(0.9); }
-            100% { opacity: 1; transform: scale(1); }
-          }
-          .animate-fade-in {
-            animation: fade-in 1s cubic-bezier(0.4,0,0.2,1) both;
-          }
-          .animate-slide-in {
-            animation: slide-in 1s cubic-bezier(0.4,0,0.2,1) both;
-          }
-          .animate-fade-up {
-            animation: fade-in-up 0.8s cubic-bezier(0.4,0,0.2,1) both;
-          }
-          .animate-scale-in {
-            animation: scale-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
-          }
-          .animate-bounce-in {
-            animation: bounce-in 1s cubic-bezier(0.4,0,0.2,1) both;
-          }
-        `}</style>
       </div>
-            
-      {/* Informational Section (like ABB) */}
-      <section className="bg-white py-16 px-4 md:px-6 border-b border-[#E6EEF8]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-            {/* Left Content */}
-            <div className="md:col-span-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mb-6 leading-tight">
-                Advancing Industrial Excellence Through Strategic Supply Solutions
+
+      {/* Stats Banner - Quick Impact */}
+      <section className="bg-gradient-to-br from-[#1F3A5F] via-[#2a4a6f] to-[#1F3A5F] py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((s, i) => {
+              const Icon = s.icon;
+              return (
+                <div key={i} className="text-center group">
+                  <div className="bg-white/10 backdrop-blur-sm w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                    <Icon className="text-3xl text-[#00a8e1]" />
+                  </div>
+                  <div className="text-4xl font-bold text-white mb-2">{s.value}</div>
+                  <div className="text-sm text-blue-200">{s.label}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section - Simplified */}
+      <section className="bg-white py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-[#1F3A5F] mb-6">
+                Your Trusted Partner in Industrial Success
               </h2>
-              <p className="text-lg text-[#4B5563] mb-8 leading-relaxed">
-                As a premier industrial solutions provider, we deliver comprehensive product portfolios and expert  logistics services across manufacturing, processing, and automation sectors. Our commitment to excellence drives innovation and efficiency in every industrial operation we support.
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Since 2018, Mahadevi Enterprise has been serving sugar mills and manufacturing units across Karnataka with premium industrial components and unmatched service.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                We understand the critical nature of industrial operations. That's why we maintain extensive inventory, ensure rapid delivery, and provide technical support whenever you need it.
               </p>
               
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                <div className="bg-gradient-to-br from-[#1F3A5F] to-[#2B4D7A] p-6 rounded-xl text-white animate-scale-in hover:scale-105 transition-transform" style={{animationDelay: '0.1s'}}>
-                  <div className="text-3xl font-bold mb-2 animate-bounce-in" style={{animationDelay: '0.3s'}}>5+</div>
-                  <div className="text-sm font-medium text-blue-100">Years of Excellence</div>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <FaCheckCircle className="text-[#00a8e1] text-xl mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-[#1F3A5F] mb-1">Wide Product Range</h4>
+                    <p className="text-gray-600 text-sm">Bearings, valves, gears, pumps, and more from trusted brands</p>
+                  </div>
                 </div>
-                <div className="bg-gradient-to-br from-[#1F3A5F] to-[#2B4D7A] p-6 rounded-xl text-white animate-scale-in hover:scale-105 transition-transform" style={{animationDelay: '0.2s'}}>
-                  <div className="text-3xl font-bold mb-2 animate-bounce-in" style={{animationDelay: '0.4s'}}>100+</div>
-                  <div className="text-sm font-medium text-blue-100">Projects Delivered</div>
+                <div className="flex items-start gap-3">
+                  <FaCheckCircle className="text-[#00a8e1] text-xl mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-[#1F3A5F] mb-1">Quick Response Time</h4>
+                    <p className="text-gray-600 text-sm">24/7 support with rapid delivery across Karnataka</p>
+                  </div>
                 </div>
-                <div className="bg-gradient-to-br from-[#1F3A5F] to-[#2B4D7A] p-6 rounded-xl text-white animate-scale-in hover:scale-105 transition-transform" style={{animationDelay: '0.3s'}}>
-                  <div className="text-3xl font-bold mb-2 animate-bounce-in" style={{animationDelay: '0.5s'}}>10+</div>
-                  <div className="text-sm font-medium text-blue-100">Cities Served</div>
-                </div>
-                <div className="bg-gradient-to-br from-[#1F3A5F] to-[#2B4D7A] p-6 rounded-xl text-white animate-scale-in hover:scale-105 transition-transform" style={{animationDelay: '0.4s'}}>
-                  <div className="text-3xl font-bold mb-2 animate-bounce-in" style={{animationDelay: '0.6s'}}>100%</div>
-                  <div className="text-sm font-medium text-blue-100">Quality Assured</div>
+                <div className="flex items-start gap-3">
+                  <FaCheckCircle className="text-[#00a8e1] text-xl mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-[#1F3A5F] mb-1">Competitive Pricing</h4>
+                    <p className="text-gray-600 text-sm">Best value without compromising on quality</p>
+                  </div>
                 </div>
               </div>
 
-              <p className="text-[#1F3A5F] text-lg leading-relaxed mb-8">
-                Partner with us to transform your industrial operations. We provide end-to-end solutions that optimize performance, reduce downtime, and drive sustainable growth through superior product quality and expert technical support.
-              </p>
+              <Link 
+                to="/aboutUs" 
+                className="inline-flex items-center gap-2 bg-[#1F3A5F] hover:bg-[#152840] text-white px-6 py-3 rounded-lg font-semibold transition-all group"
+              >
+                Learn More About Us
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
 
-            {/* Right Actions */}
-            <div className="md:col-span-4 flex flex-col justify-start gap-6">
-              <div className="bg-[#F8FAFC] p-8 rounded-xl border border-[#E6EEF8]">
-                <h3 className="text-xl font-bold text-[#1F3A5F] mb-4">Ready to Get Started?</h3>
-                <p className="text-[#4B5563] mb-6">Connect with our experts to discuss your industrial supply needs.</p>
-                <div className="flex flex-col gap-4">
-                  <Link to="/request-quote" className="inline-block bg-[#F08000] hover:bg-[#E67600] text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition duration-300 text-center">
-                    Request a Quote
-                  </Link>
-                  <Link to="/aboutUs" className="inline-block bg-[#1F3A5F] hover:bg-[#16305a] text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition duration-300 text-center">
-                    Learn More About Us
-                  </Link>
-                </div>
+            <div className="bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl shadow-lg border border-gray-200">
+              <h3 className="text-2xl font-bold text-[#1F3A5F] mb-4">
+                Get Started Today
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Need industrial supplies? Contact our team for expert advice and competitive quotes.
+              </p>
+              
+              <div className="space-y-3 mb-6">
+                <a href="tel:+919739461453" className="flex items-center gap-3 text-gray-700 hover:text-[#00a8e1] transition-colors">
+                  <div className="w-10 h-10 bg-[#00a8e1]/10 rounded-lg flex items-center justify-center">
+                    <FaClock className="text-[#00a8e1]" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-500">Call Us Now</div>
+                    <div className="font-semibold">+91 97394 61453</div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <Link 
+                  to="/request-quote" 
+                  className="bg-[#00a8e1] hover:bg-[#0090c7] text-white px-6 py-3 rounded-lg font-semibold text-center transition-all hover:scale-105"
+                >
+                  Request a Quote
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="border-2 border-[#1F3A5F] text-[#1F3A5F] hover:bg-[#1F3A5F] hover:text-white px-6 py-3 rounded-lg font-semibold text-center transition-all"
+                >
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Products */}
-      <section className="py-16 px-6 bg-[#f8fafc]">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4 text-[#1F3A5F]">
-            Our Products
-          </h2>
-          <p className="text-center text-[#4B5563] max-w-2xl mx-auto mb-10">
-            Discover our comprehensive range of industrial products, engineered for reliability and performance in the manufacturing sectors. From precision bearings to robust valves, we supply the essential components that keep your operations running smoothly.
-          </p>
+      {/* Products - Enhanced Cards */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Our Products & Solutions</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Comprehensive range of industrial components engineered for reliability and performance
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
-            {mainProducts.map((prod) => (
-              <div
-                key={prod.id}
-                className="relative group bg-white rounded-xl shadow hover:shadow-2xl transition-all duration-300 p-6 cursor-pointer border border-[#E6EEF8] hover:border-[#1F3A5F] overflow-hidden"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {mainProducts.map((p) => (
+              <Link 
+                key={p.id} 
+                to={p.link} 
+                className="group bg-white p-6 rounded-xl shadow-md hover:shadow-2xl border-2 border-transparent hover:border-[#00a8e1] transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="relative z-10 transform transition-all duration-300 group-hover:translate-y-[-5px]">
-                  <h3 className="text-xl font-bold text-[#1F3A5F] mb-2 group-hover:text-[#F08000] transition-colors">{prod.name}</h3>
-                  <p className="text-[#4B5563] text-sm mb-4 group-hover:text-[#1F3A5F] transition-colors">{prod.description}</p>
-                  <Link 
-                    to={`${prod.Link}`}
-                    className="text-[#F08000] hover:text-[#E67600] font-semibold inline-flex items-center group"
-                  >
-                    Learn More
-                    <svg className="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
+                  {p.icon}
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1F3A5F]/0 to-[#1F3A5F]/5 group-hover:to-[#1F3A5F]/10 transition-all duration-300"></div>
-              </div>
+                <h3 className="text-xl font-bold text-[#1F3A5F] mb-2 group-hover:text-[#00a8e1] transition-colors">
+                  {p.name}
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  {p.description}
+                </p>
+                <span className="text-[#00a8e1] font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                  Explore Products
+                  <FaArrowRight className="text-sm" />
+                </span>
+              </Link>
             ))}
           </div>
 
-          <div className="flex justify-center mt-8">
-            <Link
-              to="/products"
-              className="inline-block bg-[#1F3A5F] hover:bg-[#16305a] text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 flex items-center"
+          <div className="text-center">
+            <Link 
+              to="/products" 
+              className="inline-flex items-center gap-2 bg-[#1F3A5F] hover:bg-[#152840] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all group"
             >
-              View All Products & Solutions
-              <span className="ml-2 text-xl">→</span>
+              View All Products
+              <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Industry Expertise */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F3A5F] mb-4 animate-fade-in">
-            Industry-Leading Expertise
-          </h2>
-          <p className="text-center text-[#4B5563] max-w-2xl mx-auto mb-12 animate-fade-up" style={{animationDelay: '0.2s'}}>
-            Delivering cutting-edge industrial solutions across multiple sectors with advanced technology and proven methodologies.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Advanced Manufacturing Solutions",
-                desc: "State-of-the-art manufacturing capabilities ensuring precision and reliability in every component.",
-                imgPath: "/src/assets/industry/manufacturing.jpg",
-                delay: "0.3s"
-              },
-              {
-                title: "Industrial Automation Systems",
-                desc: "Implementing smart automation solutions to enhance operational efficiency and productivity.",
-                imgPath: "/src/assets/industry/automation.jpg",
-                delay: "0.4s"
-              },
-              {
-                title: "Engineering Excellence",
-                desc: "Expert engineering teams delivering innovative solutions for complex industrial challenges.",
-                imgPath: "/src/assets/industry/engineering.jpg",
-                delay: "0.5s"
-              },
-              {
-                title: "Quality Assurance",
-                desc: "Rigorous quality control processes ensuring the highest standards in industrial components.",
-                imgPath: "/src/assets/industry/quality.jpg",
-                delay: "0.6s"
-              }
-            ].map((item, index) => (
-              <div 
-                key={item.title}
-                className="group relative overflow-hidden rounded-xl shadow-lg animate-scale-in"
-                style={{animationDelay: item.delay}}
-              >
-                <div className="aspect-w-16 aspect-h-9">
-                  <img
-                    src={item.imgPath}
-                    alt={item.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1F3A5F]/90 to-transparent opacity-90"></div>
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                    <h3 className="text-2xl font-bold text-white mb-2 transform group-hover:translate-y-[-10px] transition-transform duration-500">
-                      {item.title}
-                    </h3>
-                    <p className="text-blue-100 transform group-hover:translate-y-[-10px] transition-transform duration-500 delay-75">
-                      {item.desc}
-                    </p>
+      {/* Why Choose Us - Redesigned */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Why Choose Mahadevi Enterprise?</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Trusted by industries for our commitment to quality, reliability, and exceptional service
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((f) => {
+              const Icon = f.icon;
+              return (
+                <div 
+                  key={f.title} 
+                  className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-200 hover:border-[#00a8e1] transition-all duration-300"
+                >
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#00a8e1] to-[#0090c7] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon className="text-3xl text-white" />
                   </div>
+                  <h3 className="text-xl font-bold text-[#1F3A5F] mb-3 group-hover:text-[#00a8e1] transition-colors">
+                    {f.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {f.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Expertise - Simplified */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Our Expertise</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Specialized solutions tailored for sugar mills and manufacturing industries
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {expertise.map((item) => (
+              <div 
+                key={item.title} 
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 h-80"
+              >
+                <img 
+                  src={item.imgPath} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-end p-8">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:translate-y-[-8px] transition-transform">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-200 leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      
-      {/* Why Choose Us */}
 
-      {/* Why Choose Us */}
-      <section className="py-16 px-6 bg-gradient-to-b from-[#F8FAFC] to-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-[#1F3A5F] to-[#2B4D7A] p-12 rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-all duration-500 animate-scale-in">
-              <h2 className="text-3xl font-bold mb-6 text-white bg-clip-text">
-                Why Choose Us as Your Strategic Industrial Partner?
-              </h2>
-              <p className="text-lg text-blue-100 mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
-                Empowering Industry Leaders with Cutting-Edge Solutions and Unmatched Expertise
-              </p>
-              <p className="text-blue-100 mb-8 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                With our robust supply chain network, state-of-the-art quality control systems, and over 5 years of specialized industry expertise, we deliver excellence in every component and service. Our commitment to innovation and reliability makes us the preferred choice for businesses seeking sustainable growth and operational excellence.
-              </p>
-              <Link
-                to="/aboutUs"
-                className="inline-block bg-white hover:bg-[#F08000] hover:text-white text-[#1F3A5F] px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 transform hover:translate-y-[-2px] animate-fade-up"
-                style={{animationDelay: '0.6s'}}
-              >
-                Discover Our Capabilities
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6">
-              {[
-                {
-                  img: delivery,
-                  title: '99% On‑Time Delivery',
-                  desc: 'Maintaining exceptional delivery accuracy through advanced logistics management and real-time tracking systems.',
-                  delay: '0.2s'
-                },
-                {
-                  img: trust,
-                  title: 'Industry-Leading Partnership',
-                  desc: 'Building strategic collaborations through transparent communication, technical expertise, and unwavering commitment to client success.',
-                  delay: '0.4s'
-                },
-                {
-                  img: quality,
-                  title: 'Superior Quality Assurance',
-                  desc: 'Implementing rigorous quality control measures and sourcing premium-grade materials from certified global manufacturers.',
-                  delay: '0.6s'
-                },
-              ].map((feat, i) => (
-                <div
-                  key={feat.title}
-                  className="flex items-start gap-6 bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 border border-[#E6EEF8] group animate-slide-in transform hover:translate-x-1"
-                  style={{animationDelay: feat.delay}}
-                >
-                  <div className="w-12 h-12 rounded-lg bg-[#1F3A5F]/10 flex items-center justify-center group-hover:bg-[#1F3A5F] transition-colors duration-300">
-                    <img 
-                      src={feat.img} 
-                      alt={feat.title} 
-                      className="w-8 h-8 object-contain group-hover:brightness-200 transition-all duration-300" 
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[#1F3A5F] mb-2 group-hover:text-[#F08000] transition-colors">{feat.title}</h3>
-                    <p className="text-[#4B5563] leading-relaxed group-hover:text-[#1F3A5F] transition-colors">{feat.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+      {/* CTA Section */}
+      <section className="bg-gradient-to-br from-[#1F3A5F] via-[#2a4a6f] to-[#1F3A5F] py-20 px-6">
+        <div className="container mx-auto max-w-4xl text-center text-white">
+          <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Partner with us for reliable industrial supplies and exceptional service. 
+            Contact our team today for expert consultation.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link 
+              to="/request-quote" 
+              className="bg-[#00a8e1] hover:bg-[#0090c7] text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              Request a Quote
+            </Link>
+            <Link 
+              to="/contact" 
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 px-10 py-4 rounded-lg font-semibold text-lg transition-all"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

@@ -271,7 +271,7 @@ function Products() {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain bg-white-100"
               />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-[#1F3A5F] mb-2">{product.name}</h3>
