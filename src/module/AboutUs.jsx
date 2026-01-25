@@ -41,7 +41,7 @@ function AboutUs() {
     <div className="min-h-screen bg-white">
       {/* HERO */}
       <div className="relative h-[55vh] bg-gradient-to-br from-[#1F3A5F] via-[#2a4a6f] to-[#1F3A5F] flex items-center justify-center text-center">
-        <div className="absolute inset-0 bg-[url('/path/to/your/image.jpg')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-20"></div>
         <div className="relative z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">Transforming Industry</h1>
           <p className="text-lg md:text-2xl text-blue-100 max-w-3xl mx-auto">
