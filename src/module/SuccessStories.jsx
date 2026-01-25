@@ -87,7 +87,7 @@ function SuccessStories() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
             <div className="bg-gradient-to-br from-[#00a8e1] to-[#0090c7] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">
               <FaUsers className="text-4xl mx-auto mb-3" />
-              <div className="text-3xl font-bold mb-1">20+</div>
+              <div className="text-3xl font-bold mb-1">25+</div>
               <div className="text-sm opacity-90">Happy Clients</div>
             </div>
             <div className="bg-gradient-to-br from-[#25d366] to-[#1fb855] p-6 rounded-xl text-white text-center shadow-lg hover:scale-105 transition-transform">

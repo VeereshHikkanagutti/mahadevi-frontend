@@ -16,15 +16,12 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex justify-end items-center gap-2">
           <a href="https://wa.me/919739461453" target="_blank" rel="noopener noreferrer" className="bg-[#25d366] hover:bg-[#25d366]/80 p-1.5 rounded transition flex items-center gap-1.5 px-2.5">
             <FaWhatsapp className="text-white text-sm" />
-            <span className="text-xs font-medium">WhatsApp</span>
           </a>
           <a href="mailto:info.mahadevienterprises@gmail.com" className="bg-[#ea4335] hover:bg-[#ea4335]/80 p-1.5 rounded transition flex items-center gap-1.5 px-2.5">
             <FaEnvelope className="text-white text-sm" />
-            <span className="text-xs font-medium">Email</span>
           </a>
           <a href="tel:+919739461453" className="bg-[#0077b5] hover:bg-[#0077b5]/80 p-1.5 rounded transition flex items-center gap-1.5 px-2.5">
             <FaPhone className="text-white text-sm" />
-            <span className="text-xs font-medium">Call</span>
           </a>
         </div>
       </div>

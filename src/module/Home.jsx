@@ -22,7 +22,7 @@ const mainProducts = [
 
 const stats = [
   { value: "7+", label: "Years of Excellence", icon: FaAward },
-  { value: "500+", label: "Happy Clients", icon: FaCheckCircle },
+  { value: "25+", label: "Happy Clients", icon: FaCheckCircle },
   { value: "10+", label: "Cities Served", icon: FaTruck },
   { value: "100%", label: "Quality Assured", icon: FaShieldAlt }
 ];

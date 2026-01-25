@@ -10,11 +10,13 @@ import SubProducts from "./module/SubProducts";
 import OurBrands from "./module/OurBrands";
 import SuccessStories from "./module/SuccessStories";
 import SocialContacts from "./components/SocialContacts";
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <SocialContacts />
       <Routes>
         <Route path="/" element={<Home />} />

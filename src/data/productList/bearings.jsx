@@ -6,46 +6,41 @@ const bearingProducts = [
     },
     {
         id: 'bearing-002',
-        name: '22216 Spherical Roller Bearing',
-        image: 'src/images/products/bearings/srb.jpg'
-    },
-    {
-        id: 'bearing-003',
         name: 'Ball-Bearings',
         image: 'src/images/products/bearings/Ball-Bearings.jpg'
     },
     {
-        id: 'bearing-004',
+        id: 'bearing-003',
         name: 'CylinderBearing',
         image: 'src/images/products/bearings/Cylinder Bearings.jpg'
     },
     {
-        id: 'bearing-005',
+        id: 'bearing-004',
         name: 'Flexure bearings',
         image: 'src/images/products/bearings/Flexure bearings.jpg'
     },
     {
-        id: 'bearing-006',
+        id: 'bearing-005',
         name: 'Fluid Bearings',
         image: 'src/images/products/bearings/Fluid Bearings.jpg'
     },
     {
-        id: 'bearing-007',
+        id: 'bearing-006',
         name: 'Needle-Roller-Bearings',
         image: 'src/images/products/bearings/Needle-Roller-Bearings.jpg'
     },
     {
-        id: 'bearing-008',
+        id: 'bearing-007',
         name: 'plain-ball-bearings',
         image: 'src/images/products/bearings/plain-ball-bearings.jpg'
     },
     {
-        id: 'bearing-009',
+        id: 'bearing-008',
         name: 'roller-bearings',
         image: 'src/images/products/bearings/roller-bearings.jpeg'
     },
     {
-        id: 'bearing-0010',
+        id: 'bearing-009',
         name: 'Tapered-Bearings',
         image: 'src/images/products/bearings/Tapered-Bearings.jpg'
     },
