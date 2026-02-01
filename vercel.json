@@ -1,4 +1,10 @@
 {
   "buildCommand": "echo 'build skipped'",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
 }
