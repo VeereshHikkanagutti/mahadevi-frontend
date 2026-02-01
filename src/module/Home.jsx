@@ -8,6 +8,10 @@ import img4 from '../assets/valves.jpg';
 import delivery from '../assets/delivery.svg';
 import trust from '../assets/trust.svg';
 import quality from '../assets/quality.svg';
+import expertiseManufacturing from '../assets/industry/manufacturing.jpg';
+import expertiseAutomation from '../assets/industry/automation.jpg';
+import expertiseEngineering from '../assets/industry/engineering.jpg';
+import expertiseQuality from '../assets/industry/quality.jpg';
 
 const heroImages = [img1, img2, img3, img4];
 
@@ -31,22 +35,22 @@ const expertise = [
   { 
     title: "Sugar Industry Solutions", 
     desc: "Specialized equipment and components for sugar mills, ensuring optimal performance and minimal downtime.",
-    imgPath: "/src/assets/industry/manufacturing.jpg" 
+    imgPath: expertiseManufacturing 
   },
   { 
     title: "Industrial Components", 
     desc: "Comprehensive range of bearings, valves, and transmission systems for manufacturing excellence.",
-    imgPath: "/src/assets/industry/automation.jpg" 
+    imgPath: expertiseAutomation 
   },
   { 
     title: "Quick Response Service", 
     desc: "24/7 support with rapid delivery ensuring your operations never stop.",
-    imgPath: "/src/assets/industry/engineering.jpg" 
+    imgPath: expertiseEngineering 
   },
   { 
     title: "Quality Assurance", 
     desc: "Rigorous testing and certification ensuring every product meets the highest industry standards.",
-    imgPath: "/src/assets/industry/quality.jpg" 
+    imgPath: expertiseQuality 
   }
 ];
 

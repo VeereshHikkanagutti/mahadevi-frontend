@@ -1,6 +1,5 @@
 import fullGasket from '../../images/products/Gaskets/full-gasket.png';
 import metallicGaskets from '../../images/products/Gaskets/Metallic-Gaskets.jpg';
-import ptfeGaskets from '../../images/products/Gaskets/PTFE-Gaskets.png';
 import ringGasket from '../../images/products/Gaskets/Ring-Gasket.png';
 
 const gasketProducts = [
@@ -13,11 +12,6 @@ const gasketProducts = [
         id: 'gasket2',
         name: 'Metallic-Gaskets',
         image: metallicGaskets
-    },
-    {
-        id: 'gasket3',
-        name: 'PTFE-Gaskets',
-        image: ptfeGaskets
     },
      {
         id: 'gasket3',
