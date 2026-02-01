@@ -1,38 +1,46 @@
+import chainPulleyBlocks from '../../images/products/Lifting Materials/Chain-Pulley-Blocks.jpg';
+import clamps from '../../images/products/Lifting Materials/Clamps.png';
+import dShackle from '../../images/products/Lifting Materials/D-Shackle.png';
+import electricChain from '../../images/products/Lifting Materials/Electric_Chain.png';
+import industrialBelt from '../../images/products/Lifting Materials/Industrial-Belt.png';
+import industrialBelts from '../../images/products/Lifting Materials/Industrial-Belts.png';
+import webbingSlings from '../../images/products/Lifting Materials/Webbing-Slings.png';
+
 const liftingProducts = [
     {
         id: 'lifting1',
         name: 'Chain-Pulley-Blocks',
-        image: '/src/images/products/Lifting Materials/Chain-Pulley-Blocks.jpg'
+        image: chainPulleyBlocks
     },
     {
         id: 'lifting2',
         name: 'Clamps',
-        image: '/src/images/products/Lifting Materials/Clamps.png'
+        image: clamps
     },
     {
         id: 'lifting3',
         name: 'D-Shackle',
-        image: '/src/images/products/Lifting Materials/D-Shackle.png'
+        image: dShackle
     },
     {
         id: 'lifting4',
         name: 'Electric_Chain',
-        image: '/src/images/products/Lifting Materials/Electric_Chain.png'
+        image: electricChain
     },
     {
         id: 'lifting5',
         name: 'Industrial-Belt',
-        image: '/src/images/products/Lifting Materials/Industrial-Belt.png'
+        image: industrialBelt
     },
     {
         id: 'lifting6',
         name: 'Industrial-Belts',
-        image: '/src/images/products/Lifting Materials/Industrial-Belts.png'
+        image: industrialBelts
     },
     {
         id: 'lifting7',
         name: 'Webbing-Slings',
-        image: '/src/images/products/Lifting Materials/Webbing-Slings.png'
+        image: webbingSlings
     },
 
 ];

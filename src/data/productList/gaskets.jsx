@@ -1,23 +1,28 @@
+import fullGasket from '../../images/products/Gaskets/full-gasket.png';
+import metallicGaskets from '../../images/products/Gaskets/Metallic-Gaskets.jpg';
+import ptfeGaskets from '../../images/products/Gaskets/PTFE-Gaskets.png';
+import ringGasket from '../../images/products/Gaskets/Ring-Gasket.png';
+
 const gasketProducts = [
     {
         id: 'gasket1',
         name: 'full-gasket',
-        image: '/src/images/products/Gaskets/full-gasket.png'
+        image: fullGasket
     },
     {
         id: 'gasket2',
         name: 'Metallic-Gaskets',
-        image: '/src/images/products/Gaskets/Metallic-Gaskets.jpg'
+        image: metallicGaskets
     },
     {
         id: 'gasket3',
         name: 'PTFE-Gaskets',
-        image: '/src/images/products/Gaskets/PTFE-Gaskets.png'
+        image: ptfeGaskets
     },
      {
         id: 'gasket3',
         name: 'Ring-Gasket',
-        image: '/src/images/products/Gaskets/Ring-Gasket.png'
+        image: ringGasket
     }
 ];
 

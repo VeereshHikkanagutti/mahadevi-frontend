@@ -1,78 +1,94 @@
+import airReleaseValve from '../../images/products/valves/Air-Release-Valve.png';
+import balancinValve from '../../images/products/valves/Balancing-Valve.png';
+import ballValve from '../../images/products/valves/ball-valve.jpg';
+import blowDownValve from '../../images/products/valves/Blow-Down-Valve.png';
+import blowOffVale from '../../images/products/valves/blow-off-vale.png';
+import bonnetWheelValve from '../../images/products/valves/Bonnet-Wheel-Valve.jpg';
+import breatherValve from '../../images/products/valves/breather-valve.png';
+import butterflyValve from '../../images/products/valves/Butterfly-Valve.png';
+import checkValve from '../../images/products/valves/Check-Valve.png';
+import diaphragmValve from '../../images/products/valves/Diaphragm-Valve.png';
+import gateValveJpg from '../../images/products/valves/gate-valve.jpg';
+import gateValvePng from '../../images/products/valves/Gate-Valve.png';
+import globeValve from '../../images/products/valves/globe-valve.jpg';
+import gunMetalValve from '../../images/products/valves/gun metal valve.jpg';
+import stopValve from '../../images/products/valves/Stop-Valve.png';
+
 const valveProducts = [
     {
         id: 'valve-001',
         name: 'Air-Release-Valve',
-        image: 'src/images/products/valves/Air-Release-Valve.png'
+        image: airReleaseValve
     },
     {
         id: 'valve-002',
         name: 'Balancing-Valve',
-        image: 'src/images/products/valves/Balancing-Valve.png'
+        image: balancinValve
     },
     {
         id: 'valve-003',
         name: 'ball-valve',
-        image: 'src/images/products/valves/ball-valve.jpg'
+        image: ballValve
     },
     {
         id: 'valve-004',
         name: 'Blow-Down-Valve',
-        image: 'src/images/products/valves/Blow-Down-Valve.png'
+        image: blowDownValve
     },
     {
         id: 'valve-005',
         name: 'blow-off-vale',
-        image: 'src/images/products/valves/blow-off-vale.png'
+        image: blowOffVale
     },
     {
         id: 'valve-006',
         name: 'Bonnet-Wheel-Valve',
-        image: 'src/images/products/valves/Bonnet-Wheel-Valve.jpg'
+        image: bonnetWheelValve
     },
     {
         id: 'valve-007',
         name: 'breather-valve',
-        image: 'src/images/products/valves/breather-valve.png'
+        image: breatherValve
     },
     {
         id: 'valve-008',
         name: 'Butterfly-Valve',
-        image: 'src/images/products/valves/Butterfly-Valve.png'
+        image: butterflyValve
     },
     {
         id: 'valve-009',
         name: 'Check-Valve',
-        image: 'src/images/products/valves/Check-Valve.png'
+        image: checkValve
     },
     {
         id: 'valve-0010',
         name: 'Diaphragm-Valve',
-        image: 'src/images/products/valves/Diaphragm-Valve.png'
+        image: diaphragmValve
     },
     {
         id: 'valve-011',
         name: 'gate-valve',
-        image: 'src/images/products/valves/gate-valve.jpg'
+        image: gateValveJpg
     },
     {
         id: 'valve-012',
         name: 'Gate-Valve',
-        image: 'src/images/products/valves/Gate-Valve.png'
+        image: gateValvePng
     },
     {
         id: 'valve-013',
         name: 'globe-valve',
-        image: 'src/images/products/valves/globe-valve.jpg'
+        image: globeValve
     },
     {
         id: 'valve-014',
         name: 'gun metal valve',
-        image: 'src/images/products/valves/gun metal valve.jpg'
+        image: gunMetalValve
     },
     {
         id: 'valve-015',
         name: 'DN50',
-        image: 'src/images/products/valves/Stop-Valve.png'
+        image: stopValve
     },
 
    

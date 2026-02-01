@@ -1,33 +1,40 @@
+import elbows from '../../images/products/Pipes/Elbows.png';
+import nipples from '../../images/products/Pipes/Nipples.png';
+import reducers from '../../images/products/Pipes/reducers.png';
+import sockets from '../../images/products/Pipes/Sockets.png';
+import steelPipe from '../../images/products/Pipes/Steel-Pipe.png';
+import tee from '../../images/products/Pipes/Tee.png';
+
 const pipeProducts = [
     {
         id: 'pipe1',
         name: 'Elbows',
-        image: '/src/images/products/Pipes/Elbows.png'
+        image: elbows
     },
     {
         id: 'pipe2',
         name: 'Nipples',
-        image: '/src/images/products/Pipes/Nipples.png'
+        image: nipples
     },
     {
         id: 'pipe3',
         name: 'reducers',
-        image: '/src/images/products/Pipes/reducers.png'
+        image: reducers
     },
     {
         id: 'pipe4',
         name: 'Sockets',
-        image: '/src/images/products/Pipes/Sockets.png'
+        image: sockets
     },
     {
         id: 'pipe5',
         name: 'Steel-Pipe',
-        image: '/src/images/products/Pipes/Steel-Pipe.png'
+        image: steelPipe
     },
     {
         id: 'pipe6',
         name: 'Tee',
-        image: '/src/images/products/Pipes/Tee.png'
+        image: tee
     },
     
 ];

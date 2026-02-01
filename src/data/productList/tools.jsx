@@ -1,63 +1,76 @@
+import accessories from '../../images/products/Tool/Accessories.png';
+import allenKeys from '../../images/products/Tool/Allen-Keys.png';
+import breakers from '../../images/products/Tool/Breakers.png';
+import carbideTools from '../../images/products/Tool/Carbide-Tools.png';
+import drillMachines from '../../images/products/Tool/Drill-Machines.png';
+import drillSleeves from '../../images/products/Tool/Drill-Sleeves.png';
+import grinderMachines from '../../images/products/Tool/Grinder-Machines.png';
+import hammers from '../../images/products/Tool/Hammers.png';
+import marbleCutter from '../../images/products/Tool/marble-cutter.png';
+import nonSparkingTools from '../../images/products/Tool/Non-Sparking-Tools.png';
+import pliers from '../../images/products/Tool/Pliers.png';
+import spanners from '../../images/products/Tool/Spanners.png';
+
 const toolProducts = [
     {
         id: 'tool1',
         name: 'Accessories',
-        image: '/src/images/products/Tool/Accessories.png'
+        image: accessories
     },
     {
         id: 'tool2',
         name: 'Allen-Keys',
-        image: '/src/images/products/Tool/Allen-Keys.png'
+        image: allenKeys
     },
     {
         id: 'tool3',
         name: 'Breakers',
-        image: '/src/images/products/Tool/Breakers.png'
+        image: breakers
     },
     {
         id: 'tool4',
         name: 'Carbide-Tools',
-        image: '/src/images/products/Tool/Carbide-Tools.png'
+        image: carbideTools
     },
     {
         id: 'tool5',
         name: 'Drill-Machines',
-        image: '/src/images/products/Tool/Drill-Machines.png'
+        image: drillMachines
     },
     {
         id: 'tool6',
         name: 'Drill-Sleeves',
-        image: '/src/images/products/Tool/Drill-Sleeves.png'
+        image: drillSleeves
     },
     {
         id: 'tool7',
         name: 'Grinder-Machines',
-        image: '/src/images/products/Tool/Grinder-Machines.png'
+        image: grinderMachines
     },
     {
         id: 'tool8',
         name: 'Hammers',
-        image: '/src/images/products/Tool/Hammers.png'
+        image: hammers
     },
     {
         id: 'tool9',
         name: 'marble-cutter',
-        image: '/src/images/products/Tool/marble-cutter.png'
+        image: marbleCutter
     },
     {
         id: 'tool10',
         name: 'Non-Sparking-Tools',
-        image: '/src/images/products/Tool/Non-Sparking-Tools.png'
+        image: nonSparkingTools
     },
     {
         id: 'tool11',
         name: 'Pliers',
-        image: '/src/images/products/Tool/Pliers.png'
+        image: pliers
     },
     {
         id: 'tool12',
         name: 'Spanners',
-        image: '/src/images/products/Tool/Spanners.png'
+        image: spanners
     },
 
     
