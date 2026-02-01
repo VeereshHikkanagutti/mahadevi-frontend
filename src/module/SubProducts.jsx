@@ -2,6 +2,14 @@ import { useParams, Link } from "react-router-dom";
 import valveProducts from '../data/productList/valves';
 import bearingProducts from '../data/productList/bearings';
 import gearProducts from '../data/productList/gears';
+import fastenerProducts from '../data/productList/fasteners';
+import gasketProducts from '../data/productList/gaskets';
+import flangeProducts from '../data/productList/flanges';
+import instrumentProducts from '../data/productList/instruments';
+import liftingProducts from '../data/productList/lifting';
+import pipeProducts from '../data/productList/pipes';
+import safetyProducts from '../data/productList/safety';
+import toolProducts from '../data/productList/tools';
 import ProductCard from "../components/ProductCard";
 import { useState } from "react";
 
@@ -11,14 +19,33 @@ function SubProducts() {
   const [submitted, setSubmitted] = useState(false);
   
   const getProductData = (id) => {
-    const numId = Number(id);
-    switch(numId) {
-      case 1:
+    const categoryId = String(id).toLowerCase();
+    switch(categoryId) {
+      case '1':
+      case 'bearings':
         return { id: 1, name: "Bearings", products: bearingProducts };
-      case 2:
+      case '2':
+      case 'valves':
         return { id: 2, name: "Industrial Valves", products: valveProducts };
-      case 3:
+      case '3':
+      case 'gears':
         return { id: 3, name: "Gears & Gearboxes", products: gearProducts };
+      case 'fasteners':
+        return { id: 4, name: "Fasteners & Anchors", products: fastenerProducts };
+      case 'gaskets':
+        return { id: 5, name: "Gaskets", products: gasketProducts };
+      case 'flanges':
+        return { id: 6, name: "Flanges", products: flangeProducts };
+      case 'instruments':
+        return { id: 7, name: "Instruments and Gauges", products: instrumentProducts };
+      case 'lifting':
+        return { id: 8, name: "Lifting Materials", products: liftingProducts };
+      case 'pipes':
+        return { id: 9, name: "Pipes", products: pipeProducts };
+      case 'safety':
+        return { id: 10, name: "Safety Products", products: safetyProducts };
+      case 'tools':
+        return { id: 11, name: "Tools & Equipment", products: toolProducts };
       default:
         return null;
     }
