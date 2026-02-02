@@ -1,7 +1,7 @@
 import dgbb from '../../images/products/bearings/dgbb.jpg';
 import ballBearings from '../../images/products/bearings/Ball-Bearings.jpg';
 import cylinderBearings from '../../images/products/bearings/Cylinder Bearings.jpg';
-import flexureBearings from '../../images/products/bearings/Flexure bearings.jpg';
+import flexureBearings from '../../images/products/bearings/Flexure Bearings.jpg';
 import fluidBearings from '../../images/products/bearings/Fluid Bearings.jpg';
 import needleRollerBearings from '../../images/products/bearings/Needle-Roller-Bearings.jpg';
 import plainBallBearings from '../../images/products/bearings/plain-ball-bearings.jpg';
