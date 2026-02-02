@@ -1,5 +1,5 @@
 {
-  "buildCommand": "echo 'build skipped'",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
     {
