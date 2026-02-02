@@ -9,6 +9,7 @@ import {
   FaGlobe,
   FaLightbulb,
 } from "react-icons/fa";
+import aboutUsImage from '../images/about-us.jpg';
 
 function AboutUs() {
   const [isVisible, setIsVisible] = useState({});
@@ -57,7 +58,7 @@ function AboutUs() {
             {/* LEFT: Image (set fixed height on md+ so right column text aligns to its bottom) */}
             <div className="flex items-start">
               <img
-                src="src/images/about-us.jpg" // put your image in public/images/ or adjust path
+                src={aboutUsImage}
                 alt="About Us"
                 className="w-full object-contain md:h-[460px] rounded-md"
               />
