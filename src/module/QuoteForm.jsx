@@ -61,8 +61,8 @@ function QuoteForm() {
           <p className="text-[#6B7280] text-sm mb-4">
             Our team responds to all quote requests within 24 hours.<br />
             For urgent queries, call{" "}
-            <a href="tel:+919739461453" className="text-[#F08000] font-semibold">
-              +91 9739461453
+            <a href="tel:+918123711841" className="text-[#F08000] font-semibold">
+              +91 81237 11841
             </a>.
           </p>
           <ul className="text-[#1F3A5F] text-sm font-semibold space-y-1 text-left">
@@ -161,8 +161,8 @@ function QuoteForm() {
       <div className="text-center text-gray-600 mt-8">
         <p>
           Need immediate assistance? Call{" "}
-          <a href="tel:+919739461453" className="text-[#F08000] font-semibold hover:underline">
-            +91 9739461453
+          <a href="tel:+918123711841" className="text-[#F08000] font-semibold hover:underline">
+            +91 81237 11841
           </a>{" "}
           or{" "}
           <a href="/contact" className="text-[#1F3A5F] font-semibold hover:underline">

@@ -11,7 +11,7 @@ function Footer() {
           <div className="space-y-5">
             <div>
               <h3 className="text-2xl font-bold text-white mb-2">
-                Mahadevi Enterprise
+                Poorvi Trading Company
               </h3>
               <div className="w-16 h-1 bg-gradient-to-r from-[#00a8e1] to-[#00a8e1]/40 rounded-full"></div>
             </div>
@@ -84,18 +84,19 @@ function Footer() {
               <div className="flex items-start space-x-3 group">
                 <FaMapMarkerAlt className="w-5 h-5 text-[#00a8e1] mt-1 flex-shrink-0" />
                 <div className="text-sm text-gray-300 leading-relaxed">
-                  Vinayak Nagar,<br/>
-                  Sindagi Road Almel,<br/>
-                  586202
+                  Survey No 663/B,<br/>
+                  K Salawadagi, Huvinhipparagi,<br/>
+                  Tq:Basavana Bagewadi Dist : Vijayapur, <br/>
+                  586203
                 </div>
               </div>
-              <a href="tel:+919739461453" className="flex items-center space-x-3 group hover:translate-x-1 transition-transform">
+              <a href="tel:+918123711841" className="flex items-center space-x-3 group hover:translate-x-1 transition-transform">
                 <FaPhone className="w-4 h-4 text-[#00a8e1] flex-shrink-0" />
-                <span className="text-sm text-gray-300 group-hover:text-[#00a8e1] transition-colors">+91 97394 61453</span>
+                <span className="text-sm text-gray-300 group-hover:text-[#00a8e1] transition-colors">+91 81237 11841</span>
               </a>
-              <a href="mailto:info.mahadevienterprises@gmail.com" className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
+              <a href="mailto:poorvitradingcompany2@gmail.com" className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
                 <FaEnvelope className="w-4 h-4 text-[#00a8e1] mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-300 group-hover:text-[#00a8e1] transition-colors break-all">info.mahadevienterprises@gmail.com</span>
+                <span className="text-sm text-gray-300 group-hover:text-[#00a8e1] transition-colors break-all">poorvitradingcompany2@gmail.com</span>
               </a>
             </div>
           </div>
@@ -110,7 +111,7 @@ function Footer() {
               Stay connected for updates, news, and latest offerings.
             </p>
             <div className="flex items-center gap-3">
-              <a href="https://wa.me/919739461453" target="_blank" rel="noopener noreferrer" 
+              <a href="https://wa.me/918123711841" target="_blank" rel="noopener noreferrer" 
                 className="bg-white/10 hover:bg-[#25d366] p-3 rounded-lg transition-all duration-300 group hover:scale-110">
                 <FaWhatsapp className="w-5 h-5 text-white" />
               </a>
@@ -134,7 +135,7 @@ function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} Mahadevi Enterprise. All rights reserved.
+              &copy; {new Date().getFullYear()} Poorvi Trading Company. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <Link to="/privacy-policy" className="hover:text-[#00a8e1] transition-colors">

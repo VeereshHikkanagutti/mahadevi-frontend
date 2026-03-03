@@ -174,7 +174,7 @@ function Contact() {
                   <div className="text-[#0088CC]">
                     <FaPhone size={24} />
                   </div>
-                  <p className="text-gray-600">Call Us: +91 97394 61453</p>
+                  <p className="text-gray-600">Call Us: +91 81237 11841</p>
                 </div>
 
                 <div className="flex items-center space-x-4">
@@ -182,7 +182,7 @@ function Contact() {
                     <FaEnvelope size={24} />
                   </div>
                   <p className="text-gray-600">
-                    Email Us: info.mahadevienterprises@gmail.com
+                    Email Us: poorvitradingcompany2@gmail.com
                   </p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ function Contact() {
         {/* Bottom - Map Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.7964157386486!2d76.21655357500295!3d17.082608083753556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc63b68111cd7ab%3A0x3267548d74274283!2sMAHADEVI%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1761626855070!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.7964157386486!2d76.21655357500295!3d17.082608083753556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc63b68111cd7ab%3A0x3267548d74274283!2sPOORVI%20TRADING%20COMPANY!5e0!3m2!1sen!2sin!4v1761626855070!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}

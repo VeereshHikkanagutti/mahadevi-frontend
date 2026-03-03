@@ -191,7 +191,7 @@ function SuccessStories() {
       <div className="bg-white py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold text-[#1F3A5F] text-center mb-4">
-            Why Industries Trust Mahadevi Enterprise
+            Why Industries Trust Poorvi Trading Company
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Our success is built on pillars of reliability, quality, and unwavering commitment to client satisfaction.
@@ -262,7 +262,7 @@ function SuccessStories() {
                 </div>
               </div>
               <p className="text-gray-600 italic leading-relaxed">
-                "Mahadevi Enterprise has been our go-to supplier for bearings and valves. Their prompt delivery and quality products have never disappointed us. Highly reliable partner!"
+                "Poorvi Trading Company has been our go-to supplier for bearings and valves. Their prompt delivery and quality products have never disappointed us. Highly reliable partner!"
               </p>
             </div>
 

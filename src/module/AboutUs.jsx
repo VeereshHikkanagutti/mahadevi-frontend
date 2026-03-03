@@ -58,7 +58,7 @@ function AboutUs() {
             {/* LEFT: Image (set fixed height on md+ so right column text aligns to its bottom) */}
             <div className="flex items-start">
               <img
-                src={aboutUsImage}
+                src="src/images/about-us.jpg" // put your image in public/images/ or adjust path
                 alt="About Us"
                 className="w-full object-contain md:h-[460px] rounded-md"
               />
@@ -67,17 +67,17 @@ function AboutUs() {
             {/* RIGHT: Intro block that should end at image bottom (only includes top paragraphs) */}
             <div className="flex flex-col justify-start">
               <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-                WHAT DOES MAHADEVI ENTERPRISE DO?
+                WHAT DOES POORVI TRADING COMPANY DO?
               </h2>
 
               {/* Top intro paragraphs — these will align vertically to the image height */}
               <div className="space-y-4 text-lg leading-relaxed text-gray-700">
                 <p>
-                  A Warm Welcome to Mahadevi Enterprise: Industrial Equipment Supply and Business Supply Company located in Gujarat, India.
+                  A Warm Welcome to Poorvi Trading Company: Industrial Equipment Supply and Business Supply Company located in Karnatak, India.
                 </p>
 
                 <p>
-                  We are the one-stop solution that features an exclusive range of Industrial Equipment supplies all over India. Our product range is available for all industrial purposes. Mahadevi Enterprise has been serving the industry for more than 15 years, striving to reduce the workload of buyers and establish a One-Stop Industrial Supply Chain in Gujarat, India. We currently offer over 500,000+ SKU’s, including safety products, industrial valves, pipe fittings, lifting materials, hand tools, anchors and fasteners, power tools, industrial belts, and several others.
+                  We are the one-stop solution that features an exclusive range of Industrial Equipment supplies all over India. Our product range is available for all industrial purposes. Poorvi Trading Company has been serving the industry for more than 8 years, striving to reduce the workload of buyers and establish a One-Stop Industrial Supply Chain in Karnataka, India. We currently offer over 50,000+ SKU's, including safety products, industrial valves, pipe fittings, lifting materials, hand tools, anchors and fasteners, power tools, industrial belts, and several others.
                 </p>
 
                 {/* Optional shorter paragraph here if you want — keep the right column content concise to fit image height on smaller viewports */}
@@ -95,10 +95,10 @@ function AboutUs() {
               We aim to save time in the client’s purchase process by offering the best prices in the market and easy returns for business supplies with manufacturing defects. We understand the urgency and service required by B2B clients, customizing our industrial supply range to fit their specific needs. Our commitment is to serve you with personalized services, flexible payment options, and prompt delivery to your doorstep.
             </p>
 
-            <h3 className="text-2xl font-bold text-blue-900 mt-8">Business Supplies offered by Mahadevi Enterprise</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mt-8">Business Supplies offered by Poorvi Trading Company</h3>
 
             <p className="mt-4">
-              Mahadevi Enterprise provides a comprehensive selection of industrial supplies to OEMs, manufacturing sectors, pharma companies, oil & gas, and MEP contractors. Our product range includes valves, pipes, fittings, flanges, bellows, hoses and tubings, pneumatic and hydraulic components, fasteners, instrumentation, machinery, industrial spares and parts, brushes, rubber molded parts, abrasives, machined parts, adhesives, measuring instruments, safety products, belts, lifting materials, couplings, pulleys, rubber and PVC hoses, plastic components, and cutting tools.
+              Poorvi Trading Company provides a comprehensive selection of industrial supplies to OEMs, manufacturing sectors, pharma companies, oil & gas, and MEP contractors. Our product range includes valves, pipes, fittings, flanges, bellows, hoses and tubings, pneumatic and hydraulic components, fasteners, instrumentation, machinery, industrial spares and parts, brushes, rubber molded parts, abrasives, machined parts, adhesives, measuring instruments, safety products, belts, lifting materials, couplings, pulleys, rubber and PVC hoses, plastic components, and cutting tools.
             </p>
           </div>
         </div>
@@ -107,9 +107,9 @@ function AboutUs() {
       {/* WHY CHOOSE US */}
       <div className="py-20 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
         <div className="container mx-auto px-6 max-w-6xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Mahadevi Enterprise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Poorvi Trading Company</h2>
           <p className="text-blue-100 mb-10 max-w-3xl mx-auto">
-            With over 15 years of experience, Mahadevi Enterprise has built a legacy of trust, innovation, and reliability. Here’s what makes us stand apart:
+            With over 15 years of experience, Poorvi Trading Company has built a legacy of trust, innovation, and reliability. Here's what makes us stand apart:
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -140,7 +140,7 @@ function AboutUs() {
           <div className={`transition-all duration-700 ${isVisible.overview ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}>
             <h2 className="text-4xl font-bold text-blue-900 mb-6">Leading the Way in Industrial Excellence</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Mahadevi Enterprise stands at the forefront of industrial innovation, delivering cutting-edge solutions that power the manufacturing sector. As a trusted partner to industries across India, we combine technical expertise with a deep understanding of market needs.
+              Poorvi Trading Company stands at the forefront of industrial innovation, delivering cutting-edge solutions that power the manufacturing sector. As a trusted partner to industries across India, we combine technical expertise with a deep understanding of market needs.
             </p>
             <p className="text-gray-700 text-lg">
               From our headquarters in Karnataka, we've built a nationwide network that ensures reliable delivery of premium industrial components and technical services. Our commitment to quality and innovation drives everything we do.
@@ -167,7 +167,7 @@ function AboutUs() {
       <div className="bg-[#1F3A5F] py-16 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Industry?</h2>
-          <p className="text-lg text-blue-100 mb-8">Partner with Mahadevi Enterprise for innovative industrial solutions that empower your business.</p>
+          <p className="text-lg text-blue-100 mb-8">Partner with Poorvi Trading Company for innovative industrial solutions that empower your business.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/contact" className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Contact Us</a>
             <a href="/products" className="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Explore Solutions</a>

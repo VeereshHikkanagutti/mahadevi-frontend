@@ -113,8 +113,8 @@ function Home() {
               </div>
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                MAHADEVI<br/>
-                <span className="text-[#00a8e1]">ENTERPRISE</span>
+                POORVI<br/>
+                <span className="text-[#00a8e1]">TRADING COMPANY</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-white mb-4 font-medium">
@@ -189,7 +189,7 @@ function Home() {
                 Your Trusted Partner in Industrial Success
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Since 2018, Mahadevi Enterprise has been serving sugar mills and manufacturing units across Karnataka with premium industrial components and unmatched service.
+                Since 2018, Poorvi Trading Company has been serving sugar mills and manufacturing units across Karnataka with premium industrial components and unmatched service.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 We understand the critical nature of industrial operations. That's why we maintain extensive inventory, ensure rapid delivery, and provide technical support whenever you need it.
@@ -237,13 +237,13 @@ function Home() {
               </p>
               
               <div className="space-y-3 mb-6">
-                <a href="tel:+919739461453" className="flex items-center gap-3 text-gray-700 hover:text-[#00a8e1] transition-colors">
+                <a href="tel:+918123711841" className="flex items-center gap-3 text-gray-700 hover:text-[#00a8e1] transition-colors">
                   <div className="w-10 h-10 bg-[#00a8e1]/10 rounded-lg flex items-center justify-center">
                     <FaClock className="text-[#00a8e1]" />
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Call Us Now</div>
-                    <div className="font-semibold">+91 97394 61453</div>
+                    <div className="font-semibold">+91 81237 11841</div>
                   </div>
                 </a>
               </div>
@@ -317,7 +317,7 @@ function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Why Choose Mahadevi Enterprise?</h2>
+            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Why Choose Poorvi Trading Company?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Trusted by industries for our commitment to quality, reliability, and exceptional service
             </p>

@@ -4,9 +4,9 @@ import { FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa';
 function SocialContacts() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
   
-  const whatsappNumber = '919739461453'; // Without + for WhatsApp link
-  const phoneNumber = '+919739461453';
-  const email = 'info.mahadevienterprises@gmail.com';
+  const whatsappNumber = '918123711841'; // Without + for WhatsApp link
+  const phoneNumber = '+918123711841';
+  const email = 'poorvitradingcompany2@gmail.com';
 
   const contacts = [
     {
