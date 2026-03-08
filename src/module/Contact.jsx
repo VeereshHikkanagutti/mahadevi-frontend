@@ -166,10 +166,10 @@ function Contact() {
                     <FaMapMarkerAlt size={24} />
                   </div>
                   <p className="text-gray-600">
-                    Address:Survey No 663/B,
-                            K Salawadagi, Huvinhipparagi,
+                    Address: Survey No 663/B,
+                            Kudari Salawadagi, Huvinhipparagi,
                             Tq:Basavana Bagewadi  Dist:Vijayapur,
-                            586203
+                            586203.
 
                   </p>
                 </div>
