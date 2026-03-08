@@ -166,7 +166,11 @@ function Contact() {
                     <FaMapMarkerAlt size={24} />
                   </div>
                   <p className="text-gray-600">
-                    Address: Vinayak Nagar, Sindagi Road Almel,  586202
+                    Address:Survey No 663/B,
+                            K Salawadagi, Huvinhipparagi,
+                            Tq:Basavana Bagewadi  Dist:Vijayapur,
+                            586203
+
                   </p>
                 </div>
 
@@ -210,8 +214,7 @@ function Contact() {
         {/* Bottom - Map Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.7964157386486!2d76.21655357500295!3d17.082608083753556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc63b68111cd7ab%3A0x3267548d74274283!2sPOORVI%20TRADING%20COMPANY!5e0!3m2!1sen!2sin!4v1761626855070!5m2!1sen!2sin"
-            width="100%"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2419.1425203680947!2d76.10105325809079!3d16.5980089309053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSurvey%20No%20663%2FB%2C%20Kudari%20Salawadagi%2C%20Huvinhipparagi%2C%20Tq%3ABasavana%20Bagewadi%20Dist%3AVijayapur%2C%20586203!5e1!3m2!1sen!2sin!4v1772977529310!5m2!1sen!2sin"            width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
